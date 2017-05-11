@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		417F5ADCEAA63BB61FCAFE36 /* Pods_remotex_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF796C345A4E66437690DCB /* Pods_remotex_iOS.framework */; };
+		523605701EC3002B00AFB95D /* JobTableNodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5236056F1EC3002B00AFB95D /* JobTableNodeCell.swift */; };
+		523605731EC3003600AFB95D /* JobFeedTableNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605721EC3003600AFB95D /* JobFeedTableNodeController.swift */; };
+		523605781EC3005A00AFB95D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605751EC3005A00AFB95D /* Date.swift */; };
+		5236057A1EC3005A00AFB95D /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605771EC3005A00AFB95D /* URL.swift */; };
+		52E8F0191EB87F8300866728 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F0181EB87F8300866728 /* JobModel.swift */; };
+		52E8F01B1EB87FB700866728 /* JobFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F01A1EB87FB700866728 /* JobFeedModel.swift */; };
+		52E8F01F1EB976F000866728 /* PlatformModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F01E1EB976F000866728 /* PlatformModel.swift */; };
+		52E8F0211EB9792B00866728 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F0201EB9792B00866728 /* CategoryModel.swift */; };
+		52E8F0231EB983B600866728 /* RoleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F0221EB983B600866728 /* RoleModel.swift */; };
+		52E8F0251EB9844500866728 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F0241EB9844500866728 /* SkillModel.swift */; };
+		52E8F0281EB9BAB400866728 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F0271EB9BAB400866728 /* WebService.swift */; };
+		52E8F02A1EB9C9CB00866728 /* JobPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F0291EB9C9CB00866728 /* JobPageModel.swift */; };
+		52E8F02C1EB9CBF300866728 /* OOClubConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F02B1EB9CBF300866728 /* OOClubConvenience.swift */; };
+		52E8F02E1EBADA3C00866728 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F02D1EBADA3C00866728 /* Constants.swift */; };
+		52F7A6E61EB45BF900CF9ADA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7A6E51EB45BF900CF9ADA /* AppDelegate.swift */; };
+		52F7A6F01EB45BF900CF9ADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F7A6EF1EB45BF900CF9ADA /* Assets.xcassets */; };
+		52F7A6F31EB45BF900CF9ADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F7A6F11EB45BF900CF9ADA /* LaunchScreen.storyboard */; };
+		52F7A6FE1EB45BFA00CF9ADA /* remotex_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7A6FD1EB45BFA00CF9ADA /* remotex_iOSTests.swift */; };
+		52F7A7091EB45BFA00CF9ADA /* remotex_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7A7081EB45BFA00CF9ADA /* remotex_iOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52F7A6FA1EB45BFA00CF9ADA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52F7A6DA1EB45BF900CF9ADA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52F7A6E11EB45BF900CF9ADA;
+			remoteInfo = "remotex-iOS";
+		};
+		52F7A7051EB45BFA00CF9ADA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52F7A6DA1EB45BF900CF9ADA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52F7A6E11EB45BF900CF9ADA;
+			remoteInfo = "remotex-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5236056F1EC3002B00AFB95D /* JobTableNodeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTableNodeCell.swift; sourceTree = "<group>"; };
+		523605721EC3003600AFB95D /* JobFeedTableNodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobFeedTableNodeController.swift; sourceTree = "<group>"; };
+		523605751EC3005A00AFB95D /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		523605771EC3005A00AFB95D /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		52E8F0181EB87F8300866728 /* JobModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
+		52E8F01A1EB87FB700866728 /* JobFeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobFeedModel.swift; sourceTree = "<group>"; };
+		52E8F01E1EB976F000866728 /* PlatformModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformModel.swift; sourceTree = "<group>"; };
+		52E8F0201EB9792B00866728 /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		52E8F0221EB983B600866728 /* RoleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleModel.swift; sourceTree = "<group>"; };
+		52E8F0241EB9844500866728 /* SkillModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
+		52E8F0271EB9BAB400866728 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		52E8F0291EB9C9CB00866728 /* JobPageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobPageModel.swift; sourceTree = "<group>"; };
+		52E8F02B1EB9CBF300866728 /* OOClubConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OOClubConvenience.swift; sourceTree = "<group>"; };
+		52E8F02D1EBADA3C00866728 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		52F7A6E21EB45BF900CF9ADA /* remotex-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "remotex-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F7A6E51EB45BF900CF9ADA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52F7A6EF1EB45BF900CF9ADA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52F7A6F21EB45BF900CF9ADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52F7A6F41EB45BF900CF9ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F7A6F91EB45BFA00CF9ADA /* remotex-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "remotex-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F7A6FD1EB45BFA00CF9ADA /* remotex_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remotex_iOSTests.swift; sourceTree = "<group>"; };
+		52F7A6FF1EB45BFA00CF9ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F7A7041EB45BFA00CF9ADA /* remotex-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "remotex-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F7A7081EB45BFA00CF9ADA /* remotex_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remotex_iOSUITests.swift; sourceTree = "<group>"; };
+		52F7A70A1EB45BFA00CF9ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF796C345A4E66437690DCB /* Pods_remotex_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_remotex_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD48D96C676C5B7252A34E10 /* Pods-remotex-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remotex-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-remotex-iOS/Pods-remotex-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		FF8E597FF65CC9F0790C1A66 /* Pods-remotex-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remotex-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-remotex-iOS/Pods-remotex-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52F7A6DF1EB45BF900CF9ADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417F5ADCEAA63BB61FCAFE36 /* Pods_remotex_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F7A6F61EB45BFA00CF9ADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F7A7011EB45BFA00CF9ADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49A5D400CAD8A6DE3636AF76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAF796C345A4E66437690DCB /* Pods_remotex_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5236056E1EC3002B00AFB95D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5236056F1EC3002B00AFB95D /* JobTableNodeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		523605711EC3003600AFB95D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				523605721EC3003600AFB95D /* JobFeedTableNodeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		523605741EC3005A00AFB95D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				523605751EC3005A00AFB95D /* Date.swift */,
+				523605771EC3005A00AFB95D /* URL.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		52E2DEAC1EB4D2110064984C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52E8F01A1EB87FB700866728 /* JobFeedModel.swift */,
+				52E8F0291EB9C9CB00866728 /* JobPageModel.swift */,
+				52E8F0181EB87F8300866728 /* JobModel.swift */,
+				52E8F0201EB9792B00866728 /* CategoryModel.swift */,
+				52E8F01E1EB976F000866728 /* PlatformModel.swift */,
+				52E8F0221EB983B600866728 /* RoleModel.swift */,
+				52E8F0241EB9844500866728 /* SkillModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52E8F0261EB9BA9700866728 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				52E8F0271EB9BAB400866728 /* WebService.swift */,
+				52E8F02B1EB9CBF300866728 /* OOClubConvenience.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		52F7A6D91EB45BF900CF9ADA = {
+			isa = PBXGroup;
+			children = (
+				52F7A6E41EB45BF900CF9ADA /* remotex-iOS */,
+				52F7A6FC1EB45BFA00CF9ADA /* remotex-iOSTests */,
+				52F7A7071EB45BFA00CF9ADA /* remotex-iOSUITests */,
+				52F7A6E31EB45BF900CF9ADA /* Products */,
+				BB79764FDCA22A5465315AAD /* Pods */,
+				49A5D400CAD8A6DE3636AF76 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52F7A6E31EB45BF900CF9ADA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52F7A6E21EB45BF900CF9ADA /* remotex-iOS.app */,
+				52F7A6F91EB45BFA00CF9ADA /* remotex-iOSTests.xctest */,
+				52F7A7041EB45BFA00CF9ADA /* remotex-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52F7A6E41EB45BF900CF9ADA /* remotex-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				523605741EC3005A00AFB95D /* Extension */,
+				523605711EC3003600AFB95D /* Controller */,
+				5236056E1EC3002B00AFB95D /* View */,
+				52E8F0261EB9BA9700866728 /* Client */,
+				52E2DEAC1EB4D2110064984C /* Model */,
+				52F7A6E51EB45BF900CF9ADA /* AppDelegate.swift */,
+				52E8F02D1EBADA3C00866728 /* Constants.swift */,
+				52F7A6EF1EB45BF900CF9ADA /* Assets.xcassets */,
+				52F7A6F11EB45BF900CF9ADA /* LaunchScreen.storyboard */,
+				52F7A6F41EB45BF900CF9ADA /* Info.plist */,
+			);
+			path = "remotex-iOS";
+			sourceTree = "<group>";
+		};
+		52F7A6FC1EB45BFA00CF9ADA /* remotex-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				52F7A6FD1EB45BFA00CF9ADA /* remotex_iOSTests.swift */,
+				52F7A6FF1EB45BFA00CF9ADA /* Info.plist */,
+			);
+			path = "remotex-iOSTests";
+			sourceTree = "<group>";
+		};
+		52F7A7071EB45BFA00CF9ADA /* remotex-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52F7A7081EB45BFA00CF9ADA /* remotex_iOSUITests.swift */,
+				52F7A70A1EB45BFA00CF9ADA /* Info.plist */,
+			);
+			path = "remotex-iOSUITests";
+			sourceTree = "<group>";
+		};
+		BB79764FDCA22A5465315AAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF8E597FF65CC9F0790C1A66 /* Pods-remotex-iOS.debug.xcconfig */,
+				FD48D96C676C5B7252A34E10 /* Pods-remotex-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52F7A6E11EB45BF900CF9ADA /* remotex-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52F7A70D1EB45BFA00CF9ADA /* Build configuration list for PBXNativeTarget "remotex-iOS" */;
+			buildPhases = (
+				F1F20CE77166C99A2DFA612F /* [CP] Check Pods Manifest.lock */,
+				52F7A6DE1EB45BF900CF9ADA /* Sources */,
+				52F7A6DF1EB45BF900CF9ADA /* Frameworks */,
+				52F7A6E01EB45BF900CF9ADA /* Resources */,
+				E28B2D0DC96F4324B00F279C /* [CP] Embed Pods Frameworks */,
+				FD76C821EB5B5526B13293CE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "remotex-iOS";
+			productName = "remotex-iOS";
+			productReference = 52F7A6E21EB45BF900CF9ADA /* remotex-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52F7A6F81EB45BFA00CF9ADA /* remotex-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52F7A7101EB45BFA00CF9ADA /* Build configuration list for PBXNativeTarget "remotex-iOSTests" */;
+			buildPhases = (
+				52F7A6F51EB45BFA00CF9ADA /* Sources */,
+				52F7A6F61EB45BFA00CF9ADA /* Frameworks */,
+				52F7A6F71EB45BFA00CF9ADA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52F7A6FB1EB45BFA00CF9ADA /* PBXTargetDependency */,
+			);
+			name = "remotex-iOSTests";
+			productName = "remotex-iOSTests";
+			productReference = 52F7A6F91EB45BFA00CF9ADA /* remotex-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52F7A7031EB45BFA00CF9ADA /* remotex-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52F7A7131EB45BFA00CF9ADA /* Build configuration list for PBXNativeTarget "remotex-iOSUITests" */;
+			buildPhases = (
+				52F7A7001EB45BFA00CF9ADA /* Sources */,
+				52F7A7011EB45BFA00CF9ADA /* Frameworks */,
+				52F7A7021EB45BFA00CF9ADA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52F7A7061EB45BFA00CF9ADA /* PBXTargetDependency */,
+			);
+			name = "remotex-iOSUITests";
+			productName = "remotex-iOSUITests";
+			productReference = 52F7A7041EB45BFA00CF9ADA /* remotex-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52F7A6DA1EB45BF900CF9ADA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = me.archimboldi;
+				TargetAttributes = {
+					52F7A6E11EB45BF900CF9ADA = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = XS9T3GFZ5N;
+						ProvisioningStyle = Automatic;
+					};
+					52F7A6F81EB45BFA00CF9ADA = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = XS9T3GFZ5N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 52F7A6E11EB45BF900CF9ADA;
+					};
+					52F7A7031EB45BFA00CF9ADA = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = XS9T3GFZ5N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 52F7A6E11EB45BF900CF9ADA;
+					};
+				};
+			};
+			buildConfigurationList = 52F7A6DD1EB45BF900CF9ADA /* Build configuration list for PBXProject "remotex-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52F7A6D91EB45BF900CF9ADA;
+			productRefGroup = 52F7A6E31EB45BF900CF9ADA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52F7A6E11EB45BF900CF9ADA /* remotex-iOS */,
+				52F7A6F81EB45BFA00CF9ADA /* remotex-iOSTests */,
+				52F7A7031EB45BFA00CF9ADA /* remotex-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52F7A6E01EB45BF900CF9ADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F7A6F31EB45BF900CF9ADA /* LaunchScreen.storyboard in Resources */,
+				52F7A6F01EB45BF900CF9ADA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F7A6F71EB45BFA00CF9ADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F7A7021EB45BFA00CF9ADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E28B2D0DC96F4324B00F279C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-remotex-iOS/Pods-remotex-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1F20CE77166C99A2DFA612F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD76C821EB5B5526B13293CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-remotex-iOS/Pods-remotex-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52F7A6DE1EB45BF900CF9ADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F7A6E61EB45BF900CF9ADA /* AppDelegate.swift in Sources */,
+				52E8F0251EB9844500866728 /* SkillModel.swift in Sources */,
+				52E8F0191EB87F8300866728 /* JobModel.swift in Sources */,
+				5236057A1EC3005A00AFB95D /* URL.swift in Sources */,
+				523605701EC3002B00AFB95D /* JobTableNodeCell.swift in Sources */,
+				52E8F02C1EB9CBF300866728 /* OOClubConvenience.swift in Sources */,
+				52E8F02E1EBADA3C00866728 /* Constants.swift in Sources */,
+				52E8F02A1EB9C9CB00866728 /* JobPageModel.swift in Sources */,
+				523605781EC3005A00AFB95D /* Date.swift in Sources */,
+				52E8F0281EB9BAB400866728 /* WebService.swift in Sources */,
+				523605731EC3003600AFB95D /* JobFeedTableNodeController.swift in Sources */,
+				52E8F01F1EB976F000866728 /* PlatformModel.swift in Sources */,
+				52E8F0211EB9792B00866728 /* CategoryModel.swift in Sources */,
+				52E8F01B1EB87FB700866728 /* JobFeedModel.swift in Sources */,
+				52E8F0231EB983B600866728 /* RoleModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F7A6F51EB45BFA00CF9ADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F7A6FE1EB45BFA00CF9ADA /* remotex_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F7A7001EB45BFA00CF9ADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F7A7091EB45BFA00CF9ADA /* remotex_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52F7A6FB1EB45BFA00CF9ADA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52F7A6E11EB45BF900CF9ADA /* remotex-iOS */;
+			targetProxy = 52F7A6FA1EB45BFA00CF9ADA /* PBXContainerItemProxy */;
+		};
+		52F7A7061EB45BFA00CF9ADA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52F7A6E11EB45BF900CF9ADA /* remotex-iOS */;
+			targetProxy = 52F7A7051EB45BFA00CF9ADA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52F7A6F11EB45BF900CF9ADA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52F7A6F21EB45BF900CF9ADA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52F7A70B1EB45BFA00CF9ADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52F7A70C1EB45BFA00CF9ADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52F7A70E1EB45BFA00CF9ADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF8E597FF65CC9F0790C1A66 /* Pods-remotex-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XS9T3GFZ5N;
+				INFOPLIST_FILE = "remotex-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.archimboldi.remotex-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		52F7A70F1EB45BFA00CF9ADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD48D96C676C5B7252A34E10 /* Pods-remotex-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XS9T3GFZ5N;
+				INFOPLIST_FILE = "remotex-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.archimboldi.remotex-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		52F7A7111EB45BFA00CF9ADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XS9T3GFZ5N;
+				INFOPLIST_FILE = "remotex-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.archimboldi.remotex-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/remotex-iOS.app/remotex-iOS";
+			};
+			name = Debug;
+		};
+		52F7A7121EB45BFA00CF9ADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XS9T3GFZ5N;
+				INFOPLIST_FILE = "remotex-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.archimboldi.remotex-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/remotex-iOS.app/remotex-iOS";
+			};
+			name = Release;
+		};
+		52F7A7141EB45BFA00CF9ADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = XS9T3GFZ5N;
+				INFOPLIST_FILE = "remotex-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.archimboldi.remotex-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "remotex-iOS";
+			};
+			name = Debug;
+		};
+		52F7A7151EB45BFA00CF9ADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = XS9T3GFZ5N;
+				INFOPLIST_FILE = "remotex-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.archimboldi.remotex-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "remotex-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52F7A6DD1EB45BF900CF9ADA /* Build configuration list for PBXProject "remotex-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F7A70B1EB45BFA00CF9ADA /* Debug */,
+				52F7A70C1EB45BFA00CF9ADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52F7A70D1EB45BFA00CF9ADA /* Build configuration list for PBXNativeTarget "remotex-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F7A70E1EB45BFA00CF9ADA /* Debug */,
+				52F7A70F1EB45BFA00CF9ADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52F7A7101EB45BFA00CF9ADA /* Build configuration list for PBXNativeTarget "remotex-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F7A7111EB45BFA00CF9ADA /* Debug */,
+				52F7A7121EB45BFA00CF9ADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52F7A7131EB45BFA00CF9ADA /* Build configuration list for PBXNativeTarget "remotex-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F7A7141EB45BFA00CF9ADA /* Debug */,
+				52F7A7151EB45BFA00CF9ADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52F7A6DA1EB45BF900CF9ADA /* Project object */;
+}
