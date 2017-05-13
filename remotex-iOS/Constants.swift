@@ -11,11 +11,11 @@ import UIKit
 struct Constants {
     
     struct NavigationBarLayout {
-        static let StatusBarBackgroundColor: UIColor = UIColor.init(red: 0.95, green: 0.95, blue: 0.95, alpha: 0.95)
+        static let StatusBarBackgroundColor: UIColor = UIColor.init(red: 0.98, green: 0.98, blue: 0.98, alpha: 0.95)
     }
     
     struct TableLayout {
-        static let BackgroundColor: UIColor = UIColor.init(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
+        static let BackgroundColor: UIColor = UIColor.init(red: 0.98, green: 0.98, blue: 0.98, alpha: 1.0)
         
         
     }
@@ -26,7 +26,7 @@ struct Constants {
         static let PriceFontSize: CGFloat = 16.0
         static let TagFontSize: CGFloat = 14.0
         static let TagForegroundColor: UIColor = UIColor.init(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0)
-        static let TagBackgroundColor: UIColor = UIColor.init(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
+        static let TagBackgroundColor: UIColor = UIColor.init(red: 0.96, green: 0.96, blue: 0.96, alpha: 1.0)
         
         static let AbstractFontSize: CGFloat = 16.0
         static let AbstractForegroundColor: UIColor = TitleForegroundColor

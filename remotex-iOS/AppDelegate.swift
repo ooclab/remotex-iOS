@@ -19,8 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let viewController = UINavigationController.init(rootViewController:  JobFeedTableNodeController())
         
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.black]
         UINavigationBar.appearance().barTintColor = Constants.NavigationBarLayout.StatusBarBackgroundColor
-        UINavigationBar.appearance().tintColor = Constants.NavigationBarLayout.StatusBarBackgroundColor
+        UINavigationBar.appearance().tintColor = UIColor.black
         UINavigationBar.appearance().isTranslucent = true
         
         window = UIWindow()
