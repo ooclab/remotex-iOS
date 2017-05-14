@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		417F5ADCEAA63BB61FCAFE36 /* Pods_remotex_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF796C345A4E66437690DCB /* Pods_remotex_iOS.framework */; };
+		5204A94A1EC5A7DA0089BB14 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204A9491EC5A7DA0089BB14 /* AboutViewController.swift */; };
+		5204A94C1EC7190C0089BB14 /* AboutNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204A94B1EC7190C0089BB14 /* AboutNode.swift */; };
+		5204A94E1EC768C00089BB14 /* AboutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204A94D1EC768C00089BB14 /* AboutModel.swift */; };
 		523605701EC3002B00AFB95D /* JobTableNodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5236056F1EC3002B00AFB95D /* JobTableNodeCell.swift */; };
 		523605731EC3003600AFB95D /* JobFeedTableNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605721EC3003600AFB95D /* JobFeedTableNodeController.swift */; };
 		523605781EC3005A00AFB95D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605751EC3005A00AFB95D /* Date.swift */; };
@@ -47,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5204A9491EC5A7DA0089BB14 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		5204A94B1EC7190C0089BB14 /* AboutNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutNode.swift; sourceTree = "<group>"; };
+		5204A94D1EC768C00089BB14 /* AboutModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutModel.swift; sourceTree = "<group>"; };
 		5236056F1EC3002B00AFB95D /* JobTableNodeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTableNodeCell.swift; sourceTree = "<group>"; };
 		523605721EC3003600AFB95D /* JobFeedTableNodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobFeedTableNodeController.swift; sourceTree = "<group>"; };
 		523605751EC3005A00AFB95D /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
@@ -115,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				5236056F1EC3002B00AFB95D /* JobTableNodeCell.swift */,
+				5204A94B1EC7190C0089BB14 /* AboutNode.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -123,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				523605721EC3003600AFB95D /* JobFeedTableNodeController.swift */,
+				5204A9491EC5A7DA0089BB14 /* AboutViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -146,6 +154,7 @@
 				52E8F01E1EB976F000866728 /* PlatformModel.swift */,
 				52E8F0221EB983B600866728 /* RoleModel.swift */,
 				52E8F0241EB9844500866728 /* SkillModel.swift */,
+				5204A94D1EC768C00089BB14 /* AboutModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -413,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F7A6E61EB45BF900CF9ADA /* AppDelegate.swift in Sources */,
+				5204A94E1EC768C00089BB14 /* AboutModel.swift in Sources */,
 				52E8F0251EB9844500866728 /* SkillModel.swift in Sources */,
 				52E8F0191EB87F8300866728 /* JobModel.swift in Sources */,
 				5236057A1EC3005A00AFB95D /* URL.swift in Sources */,
@@ -420,11 +430,13 @@
 				52E8F02C1EB9CBF300866728 /* OOClubConvenience.swift in Sources */,
 				52E8F02E1EBADA3C00866728 /* Constants.swift in Sources */,
 				52E8F02A1EB9C9CB00866728 /* JobPageModel.swift in Sources */,
+				5204A94A1EC5A7DA0089BB14 /* AboutViewController.swift in Sources */,
 				523605781EC3005A00AFB95D /* Date.swift in Sources */,
 				52E8F0281EB9BAB400866728 /* WebService.swift in Sources */,
 				523605731EC3003600AFB95D /* JobFeedTableNodeController.swift in Sources */,
 				52E8F01F1EB976F000866728 /* PlatformModel.swift in Sources */,
 				52E8F0211EB9792B00866728 /* CategoryModel.swift in Sources */,
+				5204A94C1EC7190C0089BB14 /* AboutNode.swift in Sources */,
 				52E8F01B1EB87FB700866728 /* JobFeedModel.swift in Sources */,
 				52E8F0231EB983B600866728 /* RoleModel.swift in Sources */,
 			);

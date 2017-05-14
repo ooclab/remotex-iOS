@@ -20,7 +20,7 @@ class JobFeedTableNodeController: ASViewController<ASTableNode> {
     init() {
         jobFeed = JobFeedModel()
         super.init(node: ASTableNode())
-        self.navigationItem.title = "RemoteX"
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -36,16 +36,27 @@ class JobFeedTableNodeController: ASViewController<ASTableNode> {
         node.delegate = self
         node.dataSource = self
         
+        setupNavigation()
+        
         self.registerForPreviewing(with: self as UIViewControllerPreviewingDelegate, sourceView: self.view)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupActivityIndicator()
-        setupNavigationAndStatusBar()
+        setupStatusBar()
     }
     
-    func setupNavigationAndStatusBar() {
+    func setupNavigation() {
+        self.navigationItem.title = "RemoteX"
+        let infoButton = UIButton.init(type: .infoLight)
+        infoButton.addTarget(self, action: #selector(presentAboutViewController), for: .touchUpInside)
+        let rightBarItem = UIBarButtonItem.init(customView: infoButton)
+        self.navigationItem.setRightBarButton(rightBarItem, animated: true)
+        navigationController?.hidesBarsOnSwipe = true
+    }
+    
+    func setupStatusBar() {
         let statusBarNode = ASDisplayNode()
         self.statusBarNode = statusBarNode
         statusBarNode.frame = CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 20)
@@ -54,7 +65,6 @@ class JobFeedTableNodeController: ASViewController<ASTableNode> {
         statusBarNode.isHidden = !UIDevice.current.orientation.isPortrait
         self.view.superview?.addSubnode(self.statusBarNode)
         
-        navigationController?.hidesBarsOnSwipe = true
     }
     
     func setupActivityIndicator() {
@@ -65,6 +75,17 @@ class JobFeedTableNodeController: ASViewController<ASTableNode> {
         refreshRect.origin = CGPoint(x: (bounds.size.width - activityIndicator.frame.size.width) / 2, y: (bounds.size.height - activityIndicator.frame.size.height) / 2)
         activityIndicator.frame = refreshRect
         self.node.view.addSubview(activityIndicator)
+    }
+    
+    func presentAboutViewController() {
+        weak var weakSelf2 = self
+        UIView.animate(withDuration: 0.6, animations: { () -> Void in
+            weakSelf2?.view.transform = CGAffineTransform(scaleX: 0.98, y: 0.98)
+        })
+        
+        let viewController = AboutViewController()
+        let navigationController = UINavigationController.init(rootViewController: viewController)
+        self.present(navigationController, animated: true, completion: nil)
     }
     
     func setupRefreshControl() {
@@ -180,7 +201,7 @@ extension JobFeedTableNodeController {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         if UIDevice.current.orientation.isPortrait {
             if self.statusBarNode == nil {
-                setupNavigationAndStatusBar()
+                setupStatusBar()
             }
             self.statusBarNode.isHidden = false
             self.activityIndicator.center = CGPoint.init(x: min(self.node.frame.size.width, self.node.frame.size.height) / 2, y: max(self.node.frame.size.width, self.node.frame.size.height) / 2)

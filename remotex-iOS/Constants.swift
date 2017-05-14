@@ -36,5 +36,11 @@ struct Constants {
         
         static let PriceForegroundColor: UIColor = UIColor.init(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0)
     }
+    
+    struct AboutLayout {
+        static let TitleFontSize: CGFloat = 25.0
+        static let SloganFontSize: CGFloat = 19.0
+        static let DescriptionFontSize: CGFloat = 17.0
+    }
 
 }

@@ -79,4 +79,28 @@ extension URL {
         urlString.append("lm=10&p=\(page)")
         return URL(string: urlString)!
     }
+    
+    static func URLforAuthorTwitter() -> URL {
+        return URL(string: "https://twitter.com/ArchimboldiMao/")!
+    }
+    
+    static func URLforRemoteXiOSGitHub() -> URL {
+        return URL(string: "https://github.com/ArchimboldiMao/remotex-ios")!
+    }
+    
+    static func URLforRemoteXWebSite() -> URL {
+        return URL(string: "https://remotex.ooclab.org")!
+    }
+    
+    static func URLforRemoteXGitHub() -> URL {
+        return URL(string: "https://github.com/ArchimboldiMao/remotex-ios")!
+    }
+    
+    static func URLforRemoteXSlack() -> URL {
+        return URL(string: "https://remotex.slack.com")!
+    }
+    
+    static func URLforRemoteXEMail() -> URL {
+        return URL(string: "mailto:admin@ooclab.org")!
+    }
 }
