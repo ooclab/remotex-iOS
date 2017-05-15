@@ -13,9 +13,10 @@ struct PlatformModel {
     let platformName: String
     let summaryText: String
     let homeURL: URL?
+    let lastSyncedAt: Date?
     
     init?(dictionary: JSONDictionary) {
-        guard let platformID = dictionary["id"] as? Int, let platformName = dictionary["name"] as? String, let homeURL = dictionary["home_url"] as? String, let summaryText = dictionary["summary"] as? String else {
+        guard let platformID = dictionary["id"] as? Int, let platformName = dictionary["name"] as? String, let homeURL = dictionary["home_url"] as? String, let summaryText = dictionary["summary"] as? String, let lastSyncString = dictionary["last_sync"] as? String else {
             print("error parsing JSON within PlatformModel Init")
             return nil
         }
@@ -27,6 +28,7 @@ struct PlatformModel {
         } else {
             self.homeURL = nil
         }
+        self.lastSyncedAt = Date.dateWithRFC3339String(from: lastSyncString)
     }
 }
 
