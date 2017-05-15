@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03A35660B287A823DAD6B23D /* Pods_remotex_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7ECB0CF3BE20955121C8A1F /* Pods_remotex_iOSTests.framework */; };
 		417F5ADCEAA63BB61FCAFE36 /* Pods_remotex_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF796C345A4E66437690DCB /* Pods_remotex_iOS.framework */; };
 		5204A94A1EC5A7DA0089BB14 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204A9491EC5A7DA0089BB14 /* AboutViewController.swift */; };
 		5204A94C1EC7190C0089BB14 /* AboutNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204A94B1EC7190C0089BB14 /* AboutNode.swift */; };
@@ -15,6 +16,10 @@
 		523605731EC3003600AFB95D /* JobFeedTableNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605721EC3003600AFB95D /* JobFeedTableNodeController.swift */; };
 		523605781EC3005A00AFB95D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605751EC3005A00AFB95D /* Date.swift */; };
 		5236057A1EC3005A00AFB95D /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605771EC3005A00AFB95D /* URL.swift */; };
+		525B3D181EC9514E007B5B68 /* JobModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B3D171EC9514E007B5B68 /* JobModelTests.swift */; };
+		525B3D1A1EC9546D007B5B68 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525B3D191EC9546D007B5B68 /* XCTest.framework */; };
+		525B3D1C1EC95487007B5B68 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525B3D1B1EC95487007B5B68 /* AsyncDisplayKit.framework */; };
+		525B3D1E1EC99B8A007B5B68 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B3D1D1EC99B8A007B5B68 /* NumberFormatter.swift */; };
 		52E8F0191EB87F8300866728 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F0181EB87F8300866728 /* JobModel.swift */; };
 		52E8F01B1EB87FB700866728 /* JobFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F01A1EB87FB700866728 /* JobFeedModel.swift */; };
 		52E8F01F1EB976F000866728 /* PlatformModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F01E1EB976F000866728 /* PlatformModel.swift */; };
@@ -57,6 +62,10 @@
 		523605721EC3003600AFB95D /* JobFeedTableNodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobFeedTableNodeController.swift; sourceTree = "<group>"; };
 		523605751EC3005A00AFB95D /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		523605771EC3005A00AFB95D /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		525B3D171EC9514E007B5B68 /* JobModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobModelTests.swift; sourceTree = "<group>"; };
+		525B3D191EC9546D007B5B68 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		525B3D1B1EC95487007B5B68 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncDisplayKit.framework; path = "../../Library/Developer/Xcode/DerivedData/remotex-iOS-aphdgijnlysnjjgbibfuniyplvir/Build/Products/Debug-iphonesimulator/Texture/AsyncDisplayKit.framework"; sourceTree = "<group>"; };
+		525B3D1D1EC99B8A007B5B68 /* NumberFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
 		52E8F0181EB87F8300866728 /* JobModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
 		52E8F01A1EB87FB700866728 /* JobFeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobFeedModel.swift; sourceTree = "<group>"; };
 		52E8F01E1EB976F000866728 /* PlatformModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformModel.swift; sourceTree = "<group>"; };
@@ -79,6 +88,9 @@
 		52F7A7081EB45BFA00CF9ADA /* remotex_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remotex_iOSUITests.swift; sourceTree = "<group>"; };
 		52F7A70A1EB45BFA00CF9ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAF796C345A4E66437690DCB /* Pods_remotex_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_remotex_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25A0AFF8D6BC82068546692 /* Pods-remotex-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remotex-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-remotex-iOSTests/Pods-remotex-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		C7ECB0CF3BE20955121C8A1F /* Pods_remotex_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_remotex_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC908F34B19D56F975723647 /* Pods-remotex-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remotex-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-remotex-iOSTests/Pods-remotex-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD48D96C676C5B7252A34E10 /* Pods-remotex-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remotex-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-remotex-iOS/Pods-remotex-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		FF8E597FF65CC9F0790C1A66 /* Pods-remotex-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remotex-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-remotex-iOS/Pods-remotex-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +108,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525B3D1C1EC95487007B5B68 /* AsyncDisplayKit.framework in Frameworks */,
+				525B3D1A1EC9546D007B5B68 /* XCTest.framework in Frameworks */,
+				03A35660B287A823DAD6B23D /* Pods_remotex_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +127,10 @@
 		49A5D400CAD8A6DE3636AF76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				525B3D1B1EC95487007B5B68 /* AsyncDisplayKit.framework */,
+				525B3D191EC9546D007B5B68 /* XCTest.framework */,
 				BAF796C345A4E66437690DCB /* Pods_remotex_iOS.framework */,
+				C7ECB0CF3BE20955121C8A1F /* Pods_remotex_iOSTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,6 +158,7 @@
 			children = (
 				523605751EC3005A00AFB95D /* Date.swift */,
 				523605771EC3005A00AFB95D /* URL.swift */,
+				525B3D1D1EC99B8A007B5B68 /* NumberFormatter.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -212,6 +231,7 @@
 			children = (
 				52F7A6FD1EB45BFA00CF9ADA /* remotex_iOSTests.swift */,
 				52F7A6FF1EB45BFA00CF9ADA /* Info.plist */,
+				525B3D171EC9514E007B5B68 /* JobModelTests.swift */,
 			);
 			path = "remotex-iOSTests";
 			sourceTree = "<group>";
@@ -230,6 +250,8 @@
 			children = (
 				FF8E597FF65CC9F0790C1A66 /* Pods-remotex-iOS.debug.xcconfig */,
 				FD48D96C676C5B7252A34E10 /* Pods-remotex-iOS.release.xcconfig */,
+				FC908F34B19D56F975723647 /* Pods-remotex-iOSTests.debug.xcconfig */,
+				C25A0AFF8D6BC82068546692 /* Pods-remotex-iOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -261,9 +283,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52F7A7101EB45BFA00CF9ADA /* Build configuration list for PBXNativeTarget "remotex-iOSTests" */;
 			buildPhases = (
+				7FDD2EDBB219196A0A9EAEB6 /* [CP] Check Pods Manifest.lock */,
 				52F7A6F51EB45BFA00CF9ADA /* Sources */,
 				52F7A6F61EB45BFA00CF9ADA /* Frameworks */,
 				52F7A6F71EB45BFA00CF9ADA /* Resources */,
+				DA5494EF4200F63D0DA2FE94 /* [CP] Embed Pods Frameworks */,
+				37B849A3176A4B97184EDDB3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -369,6 +394,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		37B849A3176A4B97184EDDB3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-remotex-iOSTests/Pods-remotex-iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FDD2EDBB219196A0A9EAEB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA5494EF4200F63D0DA2FE94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-remotex-iOSTests/Pods-remotex-iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E28B2D0DC96F4324B00F279C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,6 +494,7 @@
 				52F7A6E61EB45BF900CF9ADA /* AppDelegate.swift in Sources */,
 				5204A94E1EC768C00089BB14 /* AboutModel.swift in Sources */,
 				52E8F0251EB9844500866728 /* SkillModel.swift in Sources */,
+				525B3D1E1EC99B8A007B5B68 /* NumberFormatter.swift in Sources */,
 				52E8F0191EB87F8300866728 /* JobModel.swift in Sources */,
 				5236057A1EC3005A00AFB95D /* URL.swift in Sources */,
 				523605701EC3002B00AFB95D /* JobTableNodeCell.swift in Sources */,
@@ -447,6 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F7A6FE1EB45BFA00CF9ADA /* remotex_iOSTests.swift in Sources */,
+				525B3D181EC9514E007B5B68 /* JobModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +684,7 @@
 		};
 		52F7A7111EB45BFA00CF9ADA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC908F34B19D56F975723647 /* Pods-remotex-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -627,6 +700,7 @@
 		};
 		52F7A7121EB45BFA00CF9ADA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C25A0AFF8D6BC82068546692 /* Pods-remotex-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

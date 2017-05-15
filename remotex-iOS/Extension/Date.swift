@@ -21,4 +21,10 @@ extension Date {
         }
         return dateFormatter.date(from: rfc3339) ?? nil
     }
+    
+    static func RFC3339StringWithDate(from date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z"
+        return dateFormatter.string(from: date)
+    }
 }

@@ -125,11 +125,11 @@ extension JobModel {
     var expireAtOnScreen: String {
         if (expireAt != nil) {
             let currentCalendar = NSCalendar.current
-            let dayComponents = currentCalendar.dateComponents([.day], from: expireAt!, to: Date())
+            let dayComponents = currentCalendar.dateComponents([.day], from: Date(), to: expireAt!)
             if dayComponents.day! >= 1 {
-                return "将于\(dayComponents.day!)天后过期"
+                return "将于\(dayComponents.day!)天后到期"
             } else {
-                return "即将过期"
+                return "即将到期"
             }
         } else {
             return ""
