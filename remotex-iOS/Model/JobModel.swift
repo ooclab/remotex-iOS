@@ -26,7 +26,7 @@ struct JobModel {
     let cityName: String?
     let roles: [RoleModel]?
     let skills: [SkillModel]?
-    let platform: PlatformModel
+    let platform: PlatformModel?
     let categories: [CategoryModel]?
     
     init?(dictionary: JSONDictionary) {
@@ -42,8 +42,11 @@ struct JobModel {
         self.voteDown = voteDown
         self.viewCount = viewCount
         
-        let platform = dictionary["platform"] as! JSONDictionary
-        self.platform = PlatformModel.init(dictionary: platform)!
+        if let platform = dictionary["platform"] as? JSONDictionary {
+            self.platform = PlatformModel.init(dictionary: platform)!
+        } else {
+            self.platform = nil
+        }
         
         self.createdAt = Date.dateWithRFC3339String(from: createdAtString)!
         if let updatedString = dictionary["updated"] as? String {
@@ -66,14 +69,24 @@ struct JobModel {
         
         self.abstractText = dictionary["abstract"] as? String ?? ""
         
-        let categories = dictionary["categories"] as! [JSONDictionary]
-        self.categories = categories.flatMap(CategoryModel.init)
+        if let categories = dictionary["categories"] as? [JSONDictionary] {
+            self.categories = categories.flatMap(CategoryModel.init)
+        } else {
+            self.categories = nil
+        }
         
-        let roles = dictionary["roles"] as! [JSONDictionary]
-        self.roles = roles.flatMap(RoleModel.init)
+        if let roles = dictionary["roles"] as? [JSONDictionary] {
+            self.roles = roles.flatMap(RoleModel.init)
+        } else {
+            self.roles = nil
+        }
         
-        let skills = dictionary["skills"] as! [JSONDictionary]
-        self.skills = skills.flatMap(SkillModel.init)
+        if let skills = dictionary["skills"] as? [JSONDictionary] {
+            self.skills = skills.flatMap(SkillModel.init)
+        } else {
+            self.skills = nil
+        }
+        
     }
 }
 
@@ -82,18 +95,8 @@ extension JobModel {
         if price <= 0 {
             return "未报价"
         } else {
-            return formatRMBCurrency(value: price)
+            return NumberFormatter.formatRMBCurrency(value: price)
         }
-    }
-    
-    func formatRMBCurrency(value: Double) -> String {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
-        formatter.maximumFractionDigits = 0
-        formatter.currencySymbol = "¥"
-        formatter.locale = Locale.current
-        let result = formatter.string(from: value as NSNumber)
-        return result!
     }
     
     var viewCountOnScreen: String {
