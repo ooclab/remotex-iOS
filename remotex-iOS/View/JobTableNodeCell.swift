@@ -84,12 +84,9 @@ class JobTableNodeCell: ASCellNode {
         titleStack.children = [self.jobTitleLabel, self.priceLabel]
         
         let tagStack = ASStackLayoutSpec.horizontal()
-        tagStack.style.spacingBefore = 6.0
         tagStack.alignItems = .start
         tagStack.spacing = 8.0
         tagStack.flexWrap = .wrap  // allow multi lines
-        // TODO How to set line space between multi lines?
-        // Seemed spaceAround is not work.
         tagStack.alignContent = .spaceAround
         for tagLabel in self.tagLabels {
             tagLabel.backgroundColor = Constants.CellLayout.TagBackgroundColor
@@ -97,8 +94,11 @@ class JobTableNodeCell: ASCellNode {
             tagLabel.textContainerInset = UIEdgeInsets.init(top: 4, left: 8, bottom: 4, right: 8)
             tagLabel.cornerRadius = 8.0
             tagLabel.clipsToBounds = true
+            // use UIEdgeInsets set line space
+            // Thanks @jeffdav (Texture team member in Slack)
+            let insetStack = ASInsetLayoutSpec.init(insets: UIEdgeInsets.init(top: 6, left: 0, bottom: 0, right: 0), child: tagLabel)
+            tagStack.children?.append(insetStack)
         }
-        tagStack.children = self.tagLabels
         
         self.abstractTextLabel.style.spacingBefore = 6.0
         self.abstractTextLabel.style.spacingAfter = 6.0
