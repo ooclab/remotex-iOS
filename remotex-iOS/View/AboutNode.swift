@@ -16,6 +16,7 @@ class AboutNode: ASDisplayNode, ASTextNodeDelegate {
     let descriptionNode = ASTextNode()
     let authorNode = ASTextNode()
     let linkInfoNode = ASTextNode()
+    let versionNode = ASTextNode()
     
     private var aboutModel: AboutModel
     
@@ -36,6 +37,7 @@ class AboutNode: ASDisplayNode, ASTextNodeDelegate {
         linkInfoNode.attributedText = self.attrStringForAboutLinkInfo(withSize: Constants.AboutLayout.DescriptionFontSize)
         linkInfoNode.isUserInteractionEnabled = true
         linkInfoNode.delegate = self
+        versionNode.attributedText = self.attrStringForAboutVersion(withSize: Constants.AboutLayout.VersionFontSize)
     }
     
     func buildNodeHierarchy() {
@@ -49,7 +51,7 @@ class AboutNode: ASDisplayNode, ASTextNodeDelegate {
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        self.backgroundColor = UIColor.white
+        self.backgroundColor = Constants.TableLayout.BackgroundColor
         
         scrollNode.automaticallyManagesSubnodes = true
         scrollNode.automaticallyManagesContentSize = true
@@ -66,8 +68,10 @@ class AboutNode: ASDisplayNode, ASTextNodeDelegate {
             self.authorNode.style.spacingAfter = 32.0
             self.linkInfoNode.style.alignSelf = .start
             self.linkInfoNode.style.spacingAfter = 32.0
+            self.versionNode.style.alignSelf = .center
+            self.versionNode.style.spacingAfter = 8.0
             let stack = ASStackLayoutSpec.vertical()
-            stack.children = [self.titleNode, self.sloganNode, self.descriptionNode, self.authorNode, self.linkInfoNode]
+            stack.children = [self.titleNode, self.sloganNode, self.descriptionNode, self.authorNode, self.linkInfoNode, self.versionNode]
             return stack
         }
         
@@ -142,6 +146,16 @@ class AboutNode: ASDisplayNode, ASTextNodeDelegate {
                                         NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue, NSUnderlineColorAttributeName: UIColor.clear],
                                        range: (self.aboutModel.linkInfo as NSString).range(of: self.aboutModel.remoteXEmail))
         return attributedString
+    }
+    
+    private func attrStringForAboutVersion(withSize size: CGFloat) -> NSAttributedString {
+        let attr = [
+            NSForegroundColorAttributeName: UIColor.lightGray,
+            NSFontAttributeName: UIFont.systemFont(ofSize: size)
+        ]
+        let versionText = Bundle.main.infoDictionary?["CFBundleShortVersionString"]  as! String
+        let buildText = Bundle.main.infoDictionary?["CFBundleVersion"]  as! String
+        return NSAttributedString.init(string: "Version \(versionText) (Build \(buildText))", attributes: attr)
     }
     
     func textNode(_ textNode: ASTextNode, shouldHighlightLinkAttribute attribute: String, value: Any, at point: CGPoint) -> Bool {

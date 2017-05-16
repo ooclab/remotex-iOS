@@ -40,7 +40,8 @@ struct Constants {
     struct AboutLayout {
         static let TitleFontSize: CGFloat = 25.0
         static let SloganFontSize: CGFloat = 19.0
-        static let DescriptionFontSize: CGFloat = 17.0
+        static let DescriptionFontSize: CGFloat = 16.0
+        static let VersionFontSize: CGFloat = 12.0
     }
 
 }

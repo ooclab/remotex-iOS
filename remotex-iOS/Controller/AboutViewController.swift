@@ -26,7 +26,7 @@ class AboutViewController: ASViewController<ASDisplayNode> {
         
         setupNavigation()
         
-        self.node.backgroundColor = UIColor.white
+        self.node.backgroundColor = Constants.TableLayout.BackgroundColor
         
         self.node.addSubnode(aboutNode)
         
