@@ -32,7 +32,7 @@ class JobTableNodeCell: ASCellNode {
             tagLabels.append(self.cityLabel)
         }
         if jobModel.categories != nil && (jobModel.categories?.count)! >= 1 {
-           for category: CategoryModel in jobModel.categories! {
+            for category: CategoryModel in jobModel.categories! {
                 let label = ASTextNode()
                 label.attributedText = category.attrStringForCategoryName(withSize: Constants.CellLayout.TagFontSize)
                 tagLabels.append(label)
@@ -57,17 +57,15 @@ class JobTableNodeCell: ASCellNode {
         self.releaseAtLabel.attributedText = jobModel.attrStringForReleaseAt(withSize: Constants.CellLayout.DateFontSize)
         self.expireAtLabel.attributedText = jobModel.attrStringForExpireAt(withSize: Constants.CellLayout.DateFontSize)
         self.automaticallyManagesSubnodes = true
-
+        
         // Solutions to eliminate flashes caused by reloadData
         // https://github.com/facebookarchive/AsyncDisplayKit/issues/2536
         // http://texturegroup.org/docs/synchronous-concurrency.html
-        // If set neverShowPlaceholders is true:
+        // TODO If set neverShowPlaceholders is true:
         //    1. it can eliminate flashes caused by tableNode.reloadData,
         //    2. In Sometimes, the nodeCell may be not appear on the screen.
         // So, I will set neverShowPlaceholders is false until I find a way to fix it.
         self.neverShowPlaceholders = false
-        
-        
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
@@ -86,10 +84,13 @@ class JobTableNodeCell: ASCellNode {
         titleStack.children = [self.jobTitleLabel, self.priceLabel]
         
         let tagStack = ASStackLayoutSpec.horizontal()
-        tagStack.alignItems = .start
         tagStack.style.spacingBefore = 6.0
-        tagStack.alignContent = ASStackLayoutAlignContent.spaceAround
+        tagStack.alignItems = .start
         tagStack.spacing = 8.0
+        tagStack.flexWrap = .wrap  // allow multi lines
+        // TODO How to set line space between multi lines?
+        // Seemed spaceAround is not work.
+        tagStack.alignContent = .spaceAround
         for tagLabel in self.tagLabels {
             tagLabel.backgroundColor = Constants.CellLayout.TagBackgroundColor
             tagLabel.style.alignSelf = .center
