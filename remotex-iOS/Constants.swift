@@ -10,6 +10,10 @@ import UIKit
 
 struct Constants {
     
+    struct AppLayout {
+        static let LogoForegroundColor: UIColor = UIColor.init(red: 0.31, green: 0.74, blue: 1.0, alpha: 1.0)
+    }
+    
     struct NavigationBarLayout {
         static let StatusBarBackgroundColor: UIColor = UIColor.init(red: 0.98, green: 0.98, blue: 0.98, alpha: 0.95)
     }

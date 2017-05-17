@@ -167,10 +167,9 @@ extension JobFeedTableNodeController: ASTableDelegate, ASTableDataSource {
         let job = jobFeed.jobs[indexPath.row]
         let jobID = job.jobID
         let url = URL.URLForJobRedirect(withID: jobID)
-        let safariViewController = SFSafariViewController.init(url: url)
-        self.present(safariViewController, animated: true) {
-            tableNode.deselectRow(at: indexPath, animated: false)
-        }
+        let jobViewController = JobWebViewController.init(withURL: url)
+        self.navigationController?.pushViewController(jobViewController, animated: true)
+        tableNode.deselectRow(at: indexPath, animated: false)
     }
 }
 
@@ -181,8 +180,8 @@ extension JobFeedTableNodeController: UIViewControllerPreviewingDelegate {
             let job = jobFeed.jobs[indexPath.row]
             let jobID = job.jobID
             let url = URL.URLForJobRedirect(withID: jobID)
-            let safariViewController = SFSafariViewController.init(url: url)
-            return safariViewController
+            let jobViewController = JobWebViewController.init(withURL: url)
+            return jobViewController
         } else {
             return nil
         }
@@ -190,8 +189,7 @@ extension JobFeedTableNodeController: UIViewControllerPreviewingDelegate {
     }
     
     public func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
-        self.present(viewControllerToCommit, animated: false) {
-        }
+        self.navigationController?.pushViewController(viewControllerToCommit, animated: true)
     }
     
 }
