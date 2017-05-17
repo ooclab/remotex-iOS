@@ -73,7 +73,11 @@ class JobWebViewController: UIViewController, WKNavigationDelegate {
             }
         } else {
             if (self.webView.superview != nil) {
-                progressView.frame = CGRect.init(x: self.webView.frame.origin.x, y: self.webView.frame.origin.y + 20 - progressView.frame.size.height, width: self.webView.frame.size.width, height: 2)
+                if UIDevice.current.orientation.isPortrait {
+                    progressView.frame = CGRect.init(x: self.webView.frame.origin.x, y: self.webView.frame.origin.y + 20 - progressView.frame.size.height, width: self.webView.frame.size.width, height: 2)
+                } else {
+                    progressView.frame = CGRect.init(x: self.webView.frame.origin.x, y: 0, width: self.webView.frame.size.width, height: 2)
+                }
                 if self.progressView.superview != self.webView.superview {
                     self.progressView.removeFromSuperview()
                     self.webView.superview?.addSubview(self.progressView)
