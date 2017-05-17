@@ -16,7 +16,6 @@ struct AboutModel {
     let authorTwitterUsername: String
     let remoteXiOSGitHub: String
     let remoteXWebSite: String
-    let remoteXGitHub: String
     let remoteXSlack: String
     let remoteXEmail: String
     let linkInfo: String
@@ -25,16 +24,15 @@ struct AboutModel {
     init() {
         self.aboutTitle = "RemoteX"
         self.slogan = "快乐工作  认真生活"
-        self.description = "RemoteX 远程工作空间是一个开发远程／众包／外包的信息聚合平台，我们将需求从不同的平台汇集到这里，非盈利组织运作。\n欢迎需求方／开发方联系我们。"
+        self.description = "RemoteX 远程工作空间是一个远程／众包／外包的信息聚合平台，我们将需求从不同的平台汇集到这里，非盈利组织运作。\n欢迎需求方／开发方联系我们。"
         self.authorTwitterUsername = "@ArchimboldiMao"
         self.remoteXiOSGitHub = "GitHub(remotex-iOS)"
         self.author = "RemoteX iOS App 由 \(authorTwitterUsername) 开发，欢迎前往 \(remoteXiOSGitHub) 主页点赞收藏。"
         
         self.remoteXWebSite = "https://remotex.ooclab.org"
-        self.remoteXGitHub = "https://github.com/ooclab/remotex"
         self.remoteXSlack = "https://remotex.slack.com"
         self.remoteXEmail = "admin@ooclab.org"
-        self.linkInfo = "联系方式\n网 站：\(remoteXWebSite)\nGitHub：\(remoteXGitHub)\nSlack：\(remoteXSlack)\n邮 件：\(remoteXEmail)\nqq群: remotex 633498747\n微信群: 加 lijian_gnu 拉入群"
+        self.linkInfo = "联系方式\n网 站：\(remoteXWebSite)\nSlack：\(remoteXSlack)\n邮 件：\(remoteXEmail)\nqq群: remotex 633498747\n微信群: 加 lijian_gnu 拉入群"
         
     }
 }

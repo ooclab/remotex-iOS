@@ -133,10 +133,6 @@ class AboutNode: ASDisplayNode, ASTextNodeDelegate {
                                         NSForegroundColorAttributeName: UIColor.blue,
                                         NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue, NSUnderlineColorAttributeName: UIColor.clear],
                                        range: (self.aboutModel.linkInfo as NSString).range(of: self.aboutModel.remoteXWebSite))
-        attributedString.addAttributes([NSLinkAttributeName: URL.URLforRemoteXGitHub(),
-                                        NSForegroundColorAttributeName: UIColor.blue,
-                                        NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue, NSUnderlineColorAttributeName: UIColor.clear],
-                                       range: (self.aboutModel.linkInfo as NSString).range(of: self.aboutModel.remoteXGitHub))
         attributedString.addAttributes([NSLinkAttributeName: URL.URLforRemoteXSlack(),
                                         NSForegroundColorAttributeName: UIColor.blue,
                                         NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue, NSUnderlineColorAttributeName: UIColor.clear],
