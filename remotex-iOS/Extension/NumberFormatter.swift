@@ -2,7 +2,7 @@
 //  NumberFormatter.swift
 //  remotex-iOS
 //
-//  Created by Niangzi&Xianggong on 15/05/2017.
+//  Created by archimboldi on 15/05/2017.
 //  Copyright © 2017 me.archimboldi. All rights reserved.
 //
 
