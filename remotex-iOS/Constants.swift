@@ -20,8 +20,6 @@ struct Constants {
     
     struct TableLayout {
         static let BackgroundColor: UIColor = UIColor.init(red: 0.98, green: 0.98, blue: 0.98, alpha: 1.0)
-        
-        
     }
     
     struct CellLayout {
@@ -46,6 +44,12 @@ struct Constants {
         static let SloganFontSize: CGFloat = 19.0
         static let DescriptionFontSize: CGFloat = 16.0
         static let VersionFontSize: CGFloat = 12.0
+    }
+    
+    struct ShareContext {
+        static let TitleText = "RemoteX 远程工作空间 -- 快乐工作 认真生活"
+        static let AppStoreLinkURL = NSURL.init(string: "https://itunes.apple.com/app/id1236035785")!
+        static let LogoImage = UIImage(named: "logo")!
     }
 
 }

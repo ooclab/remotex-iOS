@@ -150,8 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				523605721EC3003600AFB95D /* JobFeedTableNodeController.swift */,
-				5204A9491EC5A7DA0089BB14 /* AboutViewController.swift */,
 				52E7E54D1ECBD6690055DECE /* JobWebViewController.swift */,
+				5204A9491EC5A7DA0089BB14 /* AboutViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

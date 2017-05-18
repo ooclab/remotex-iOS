@@ -54,17 +54,13 @@ class AboutViewController: ASViewController<ASDisplayNode> {
     }
     
     func shareAction() {
-        let shareText = "shareText"
-        if let url = NSURL.init(string: "https://itunes.apple.com/app/id1236035785") {
-            var shareObject = [Any]()
-            if let image = UIImage(named: "logo") {
-                shareObject = [image, url, shareText] as [Any]
-            } else {
-                shareObject = [url, shareText] as [Any]
-            }
-            let activityViewController = UIActivityViewController(activityItems: shareObject, applicationActivities: nil)
-            activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
-            self.present(activityViewController, animated: true, completion: nil)
-        }
+        let shareText = Constants.ShareContext.TitleText
+        let url = Constants.ShareContext.AppStoreLinkURL
+        let image = Constants.ShareContext.LogoImage
+        var shareObject = [Any]()
+        shareObject = [image, url, shareText] as [Any]
+        let activityViewController = UIActivityViewController(activityItems: shareObject, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
+        self.present(activityViewController, animated: true, completion: nil)
     }
 }
