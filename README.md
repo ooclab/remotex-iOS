@@ -1,11 +1,10 @@
-# remotex-iOS
-这是根据 [RemoteX](https://github.com/ooclab/remotex) 的 public api 编写的 iOS App。
+# RemoteX-iOS
+RemoteX-iOS 是一个聚合了众包／外包／远程工作信息的 iOS App，根据 [RemoteX](https://github.com/ooclab/remotex) 的 public api 编写。
 
-请前往 [RemoteX](https://github.com/ooclab/remotex) 查看更多信息。
+# App Store
+已经同步发布在 [App Store](https://itunes.apple.com/app/id1236035785)，欢迎下载使用。
+![App Store download](https://devimages.apple.com.edgekey.net/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg)
 
-### App 截图
-![App 截图](https://cloud.githubusercontent.com/assets/6983215/25951415/3026c070-3690-11e7-8926-4d9a15a341e4.PNG)
-
-### App 运行的效果
-
-[使用浏览器查看，Powered by Appetize.io](https://appetize.io/embed/047pdty5u2cuzvdj9afacz9h84?device=iphone7&scale=75&orientation=portrait&osVersion=10.3)
+# RemoteX
+RemoteX 是一个聚合了众包／外包／远程工作信息的远程工作空间。
+请前往 [RemoteX 的 GitHub](https://github.com/ooclab/remotex) 了解更多信息。
