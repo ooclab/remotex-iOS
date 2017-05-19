@@ -12,6 +12,7 @@
 		5204A94A1EC5A7DA0089BB14 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204A9491EC5A7DA0089BB14 /* AboutViewController.swift */; };
 		5204A94C1EC7190C0089BB14 /* AboutNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204A94B1EC7190C0089BB14 /* AboutNode.swift */; };
 		5204A94E1EC768C00089BB14 /* AboutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204A94D1EC768C00089BB14 /* AboutModel.swift */; };
+		5230634F1ECD8B0E00FB21E0 /* JobFeedTableNodeControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230634E1ECD8B0E00FB21E0 /* JobFeedTableNodeControllerTests.swift */; };
 		523605701EC3002B00AFB95D /* JobTableNodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5236056F1EC3002B00AFB95D /* JobTableNodeCell.swift */; };
 		523605731EC3003600AFB95D /* JobFeedTableNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605721EC3003600AFB95D /* JobFeedTableNodeController.swift */; };
 		523605781EC3005A00AFB95D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605751EC3005A00AFB95D /* Date.swift */; };
@@ -59,6 +60,7 @@
 		5204A9491EC5A7DA0089BB14 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		5204A94B1EC7190C0089BB14 /* AboutNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutNode.swift; sourceTree = "<group>"; };
 		5204A94D1EC768C00089BB14 /* AboutModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutModel.swift; sourceTree = "<group>"; };
+		5230634E1ECD8B0E00FB21E0 /* JobFeedTableNodeControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobFeedTableNodeControllerTests.swift; sourceTree = "<group>"; };
 		5236056F1EC3002B00AFB95D /* JobTableNodeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTableNodeCell.swift; sourceTree = "<group>"; };
 		523605721EC3003600AFB95D /* JobFeedTableNodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobFeedTableNodeController.swift; sourceTree = "<group>"; };
 		523605751EC3005A00AFB95D /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				52F7A6FD1EB45BFA00CF9ADA /* remotex_iOSTests.swift */,
 				52F7A6FF1EB45BFA00CF9ADA /* Info.plist */,
 				525B3D171EC9514E007B5B68 /* JobModelTests.swift */,
+				5230634E1ECD8B0E00FB21E0 /* JobFeedTableNodeControllerTests.swift */,
 			);
 			path = "remotex-iOSTests";
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 			files = (
 				52F7A6FE1EB45BFA00CF9ADA /* remotex_iOSTests.swift in Sources */,
 				525B3D181EC9514E007B5B68 /* JobModelTests.swift in Sources */,
+				5230634F1ECD8B0E00FB21E0 /* JobFeedTableNodeControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
