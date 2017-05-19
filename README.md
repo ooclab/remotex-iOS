@@ -8,3 +8,6 @@ RemoteX-iOS 是一个聚合了众包／外包／远程工作信息的 iOS App，
 # RemoteX
 RemoteX 是一个聚合了众包／外包／远程工作信息的远程工作空间。
 请前往 [RemoteX 的 GitHub](https://github.com/ooclab/remotex) 了解更多信息。
+
+# License
+All code contributed to RemoteX-iOS is released under an Apache 2.0 license.
