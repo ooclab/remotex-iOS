@@ -114,6 +114,7 @@ class JobFeedTableNodeController: ASViewController<ASTableNode> {
                 DispatchQueue.main.async {
                     self.refreshControl.endRefreshing()
                 }
+                PromptMessageWrap.show(withMessage: Constants.MessageDescription.NoInternetConnection)
                 if self.batchContext != nil {
                     self.batchContext?.completeBatchFetching(true)
                 }
@@ -133,6 +134,7 @@ class JobFeedTableNodeController: ASViewController<ASTableNode> {
                 context?.completeBatchFetching(true)
             case .noConnection:
                 self.activityIndicator.stopAnimating()
+                PromptMessageWrap.show(withMessage: Constants.MessageDescription.NoInternetConnection)
                 if context != nil {
                     context?.completeBatchFetching(true)
                 }
