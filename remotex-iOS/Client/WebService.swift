@@ -27,7 +27,7 @@ final class WebService {
 extension WebService {
     fileprivate func checkForNetworkErrors(_ data: Data?, _ response: URLResponse? , _ error: Error?) -> Result<Data> {
         guard error == nil else {
-            if (error! as NSError).domain == NSURLErrorDomain && ((error! as NSError).code == NSURLErrorNotConnectedToInternet || (error! as NSError).code == NSURLErrorTimedOut) {
+            if (error! as NSError).domain == kCFErrorDomainCFNetwork as String || ((error! as NSError).domain == NSURLErrorDomain && ((error! as NSError).code == NSURLErrorNotConnectedToInternet || (error! as NSError).code == NSURLErrorTimedOut)) {
                 return .failure(.noInternetConnection)
             } else {
                 return .failure(.returnedError(error!))
