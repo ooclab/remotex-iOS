@@ -96,21 +96,31 @@ class JobFeedTableNodeController: ASViewController<ASTableNode> {
     }
     
     func refreshTableNode() {
+        // When table's dataSource is empty, and shouldBatchFetch is true, touch tableNode will trigger fetchNewBacthWithContext(context), thus ignore refresh.
+        if self.jobFeed.numberOfItemsInFeed == 0 {
+            self.refreshControl.endRefreshing()
+            return
+        }
         self.refreshControl.beginRefreshing()
         jobFeed.refreshNewBatchOfLatestJobs() { additions, connectionStatus in
             switch connectionStatus {
             case .connected:
-                self.refreshControl.endRefreshing()
+                DispatchQueue.main.async {
+                    self.refreshControl.endRefreshing()
+                }
                 self.node.reloadData()
                 self.batchContext?.completeBatchFetching(true)
             case .noConnection:
-                self.refreshControl.endRefreshing()
+                DispatchQueue.main.async {
+                    self.refreshControl.endRefreshing()
+                }
+                PromptMessageWrap.show(withMessage: Constants.MessageDescription.NoInternetConnection)
                 if self.batchContext != nil {
                     self.batchContext?.completeBatchFetching(true)
                 }
+                
                 break
             }
-            
         }
     }
     
@@ -124,9 +134,11 @@ class JobFeedTableNodeController: ASViewController<ASTableNode> {
                 context?.completeBatchFetching(true)
             case .noConnection:
                 self.activityIndicator.stopAnimating()
+                PromptMessageWrap.show(withMessage: Constants.MessageDescription.NoInternetConnection)
                 if context != nil {
                     context?.completeBatchFetching(true)
                 }
+                
                 break
             }
         }
