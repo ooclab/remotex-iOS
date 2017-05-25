@@ -4,6 +4,7 @@ use_frameworks!
 
 target 'remotex-iOS' do
     pod 'Texture'
+    pod 'PromptMessage'
     
     target 'remotex-iOSTests' do
         inherit! :search_paths
