@@ -119,10 +119,12 @@ class JobWebViewController: UIViewController, WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         dismissProgressView()
+        PromptMessageWrap.show(withMessage: Constants.MessageDescription.NoInternetConnection)
     }
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         dismissProgressView()
+        PromptMessageWrap.show(withMessage: Constants.MessageDescription.NoInternetConnection)
     }
     
 }

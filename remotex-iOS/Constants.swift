@@ -51,5 +51,9 @@ struct Constants {
         static let AppStoreLinkURL = NSURL.init(string: "https://itunes.apple.com/app/id1236035785")!
         static let LogoImage = UIImage(named: "logo")!
     }
+    
+    struct MessageDescription {
+        static let NoInternetConnection = "网络连接超时。"
+    }
 
 }

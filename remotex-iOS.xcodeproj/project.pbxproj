@@ -32,6 +32,7 @@
 		52E8F02A1EB9C9CB00866728 /* JobPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F0291EB9C9CB00866728 /* JobPageModel.swift */; };
 		52E8F02C1EB9CBF300866728 /* OOClubConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F02B1EB9CBF300866728 /* OOClubConvenience.swift */; };
 		52E8F02E1EBADA3C00866728 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F02D1EBADA3C00866728 /* Constants.swift */; };
+		52E9BD881ED674A900AAF714 /* PromptMessageWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9BD871ED674A900AAF714 /* PromptMessageWrap.swift */; };
 		52F7A6E61EB45BF900CF9ADA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7A6E51EB45BF900CF9ADA /* AppDelegate.swift */; };
 		52F7A6F01EB45BF900CF9ADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F7A6EF1EB45BF900CF9ADA /* Assets.xcassets */; };
 		52F7A6F31EB45BF900CF9ADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F7A6F11EB45BF900CF9ADA /* LaunchScreen.storyboard */; };
@@ -80,6 +81,7 @@
 		52E8F0291EB9C9CB00866728 /* JobPageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobPageModel.swift; sourceTree = "<group>"; };
 		52E8F02B1EB9CBF300866728 /* OOClubConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OOClubConvenience.swift; sourceTree = "<group>"; };
 		52E8F02D1EBADA3C00866728 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		52E9BD871ED674A900AAF714 /* PromptMessageWrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptMessageWrap.swift; sourceTree = "<group>"; };
 		52F7A6E21EB45BF900CF9ADA /* remotex-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "remotex-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F7A6E51EB45BF900CF9ADA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F7A6EF1EB45BF900CF9ADA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				523605751EC3005A00AFB95D /* Date.swift */,
 				523605771EC3005A00AFB95D /* URL.swift */,
 				525B3D1D1EC99B8A007B5B68 /* NumberFormatter.swift */,
+				52E9BD871ED674A900AAF714 /* PromptMessageWrap.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				52F7A6E61EB45BF900CF9ADA /* AppDelegate.swift in Sources */,
 				5204A94E1EC768C00089BB14 /* AboutModel.swift in Sources */,
 				52E8F0251EB9844500866728 /* SkillModel.swift in Sources */,
+				52E9BD881ED674A900AAF714 /* PromptMessageWrap.swift in Sources */,
 				525B3D1E1EC99B8A007B5B68 /* NumberFormatter.swift in Sources */,
 				52E8F0191EB87F8300866728 /* JobModel.swift in Sources */,
 				52E7E54E1ECBD6690055DECE /* JobWebViewController.swift in Sources */,
