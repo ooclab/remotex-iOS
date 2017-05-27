@@ -78,11 +78,6 @@ class JobFeedTableNodeController: ASViewController<ASTableNode> {
     }
     
     func presentAboutViewController() {
-        weak var weakSelf2 = self
-        UIView.animate(withDuration: 0.6, animations: { () -> Void in
-            weakSelf2?.view.transform = CGAffineTransform(scaleX: 0.98, y: 0.98)
-        })
-        
         let viewController = AboutViewController()
         let navigationController = UINavigationController.init(rootViewController: viewController)
         self.present(navigationController, animated: true, completion: nil)
