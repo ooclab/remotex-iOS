@@ -111,11 +111,16 @@ class AboutNode: ASDisplayNode, ASTextNodeDelegate {
         ]
         let attributedString = NSMutableAttributedString.init(string: self.aboutModel.author)
         attributedString.addAttributes(attr, range: NSRange.init(location: 0, length: (self.aboutModel.author as NSString).length))
-        attributedString.addAttributes([NSLinkAttributeName: URL.URLforAuthorTwitter(),
+        attributedString.addAttributes([NSLinkAttributeName: URL.URLForCreatorGitHub(),
                                         NSForegroundColorAttributeName: UIColor.blue,
                                         NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue, NSUnderlineColorAttributeName: UIColor.clear],
                                        range: (self.aboutModel.author as NSString).range(of: self.aboutModel.authorTwitterUsername))
-        attributedString.addAttributes([NSLinkAttributeName: URL.URLforRemoteXiOSGitHub(),
+        
+        attributedString.addAttributes([NSLinkAttributeName: URL.URLForRemoteXiOSContributors(),
+                                        NSForegroundColorAttributeName: UIColor.blue,
+                                        NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue, NSUnderlineColorAttributeName: UIColor.clear],
+                                       range: (self.aboutModel.author as NSString).range(of: self.aboutModel.remoteXiOSContributors))
+        attributedString.addAttributes([NSLinkAttributeName: URL.URLForRemoteXiOSGitHub(),
                                         NSForegroundColorAttributeName: UIColor.blue,
                                         NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue, NSUnderlineColorAttributeName: UIColor.clear],
                                        range: (self.aboutModel.author as NSString).range(of: self.aboutModel.remoteXiOSGitHub))
@@ -129,15 +134,15 @@ class AboutNode: ASDisplayNode, ASTextNodeDelegate {
         ]
         let attributedString = NSMutableAttributedString.init(string: self.aboutModel.linkInfo)
         attributedString.addAttributes(attr, range: NSRange.init(location: 0, length: (self.aboutModel.linkInfo as NSString).length))
-        attributedString.addAttributes([NSLinkAttributeName: URL.URLforRemoteXWebSite(),
+        attributedString.addAttributes([NSLinkAttributeName: URL.URLForRemoteXWebSite(),
                                         NSForegroundColorAttributeName: UIColor.blue,
                                         NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue, NSUnderlineColorAttributeName: UIColor.clear],
                                        range: (self.aboutModel.linkInfo as NSString).range(of: self.aboutModel.remoteXWebSite))
-        attributedString.addAttributes([NSLinkAttributeName: URL.URLforRemoteXSlack(),
+        attributedString.addAttributes([NSLinkAttributeName: URL.URLForRemoteXSlack(),
                                         NSForegroundColorAttributeName: UIColor.blue,
                                         NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue, NSUnderlineColorAttributeName: UIColor.clear],
                                        range: (self.aboutModel.linkInfo as NSString).range(of: self.aboutModel.remoteXSlack))
-        attributedString.addAttributes([NSLinkAttributeName: URL.URLforRemoteXEMail(),
+        attributedString.addAttributes([NSLinkAttributeName: URL.URLForRemoteXEMail(),
                                         NSForegroundColorAttributeName: UIColor.blue,
                                         NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue, NSUnderlineColorAttributeName: UIColor.clear],
                                        range: (self.aboutModel.linkInfo as NSString).range(of: self.aboutModel.remoteXEmail))
