@@ -61,11 +61,7 @@ class JobTableNodeCell: ASCellNode {
         // Solutions to eliminate flashes caused by reloadData
         // https://github.com/facebookarchive/AsyncDisplayKit/issues/2536
         // http://texturegroup.org/docs/synchronous-concurrency.html
-        // TODO If set neverShowPlaceholders is true:
-        //    1. it can eliminate flashes caused by tableNode.reloadData,
-        //    2. In Sometimes, the nodeCell may be not appear on the screen.
-        // So, I will set neverShowPlaceholders is false until I find a way to fix it.
-        self.neverShowPlaceholders = false
+        self.neverShowPlaceholders = true
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
