@@ -80,27 +80,27 @@ extension URL {
         return URL(string: urlString)!
     }
     
-    static func URLforAuthorTwitter() -> URL {
-        return URL(string: "https://twitter.com/ArchimboldiMao/")!
+    static func URLForRemoteXiOSGitHub() -> URL {
+        return URL(string: "https://github.com/ooclab/remotex-ios")!
     }
     
-    static func URLforRemoteXiOSGitHub() -> URL {
-        return URL(string: "https://github.com/ArchimboldiMao/remotex-ios")!
+    static func URLForRemoteXiOSContributors() -> URL {
+        return URL(string: "https://github.com/ooclab/remotex-iOS/graphs/contributors")!
     }
     
-    static func URLforRemoteXWebSite() -> URL {
+    static func URLForRemoteXWebSite() -> URL {
         return URL(string: "https://remotex.ooclab.org")!
     }
     
-    static func URLforRemoteXGitHub() -> URL {
-        return URL(string: "https://github.com/ArchimboldiMao/remotex-ios")!
+    static func URLForCreatorGitHub() -> URL {
+        return URL(string: "https://github.com/ArchimboldiMao/")!
     }
     
-    static func URLforRemoteXSlack() -> URL {
+    static func URLForRemoteXSlack() -> URL {
         return URL(string: "https://remotex.slack.com")!
     }
     
-    static func URLforRemoteXEMail() -> URL {
+    static func URLForRemoteXEMail() -> URL {
         return URL(string: "mailto:admin@ooclab.org")!
     }
 }
