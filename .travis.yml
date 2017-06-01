@@ -20,4 +20,4 @@ xcode_scheme: remotex-iOSTests
 xcode_sdk: iphonesimulator10.3
 
 script:
-  - xcodebuild clean build test -project remotex-iOS.xcodeproj -scheme remotex-iOSTests
+  - xcodebuild clean build test -project remotex-iOS.xcodeproj -scheme remotex-iOSTests CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
