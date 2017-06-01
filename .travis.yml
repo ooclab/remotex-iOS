@@ -1,0 +1,21 @@
+language: objective-c
+cache:
+  - bundler
+  - cocoapods
+
+git:
+  depth: 10
+
+before_install:
+  - brew update
+  - brew outdated xctool || brew upgrade xctool
+  - gem install cocoapods -v 1.2.1
+  - gem install xcpretty -v 0.2.8
+  - gem install xcpretty-travis-formatter
+  - xcrun simctl list
+xcode_project: remotex-iOS.xcodeproj
+xcode_scheme: remotex-iOSTests
+xcode_sdk: iphonesimulator10.3
+
+script:
+  - xcodebuild clean build test -project remotex-iOS.xcodeproj -scheme remotex-iOSTests
