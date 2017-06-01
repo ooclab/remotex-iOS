@@ -46,6 +46,7 @@ class AboutNode: ASDisplayNode, ASTextNodeDelegate {
         scrollNode.addSubnode(descriptionNode)
         scrollNode.addSubnode(authorNode)
         scrollNode.addSubnode(linkInfoNode)
+        scrollNode.addSubnode(versionNode)
         
         self.addSubnode(scrollNode)
     }

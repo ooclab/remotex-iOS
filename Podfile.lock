@@ -1,4 +1,9 @@
 PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
   - PINCache (3.0.1-beta.4):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.4)
     - PINCache/Core (= 3.0.1-beta.4)
@@ -24,16 +29,18 @@ PODS:
     - Texture/Core
 
 DEPENDENCIES:
+  - FBSnapshotTestCase
   - PromptMessage
   - Texture
 
 SPEC CHECKSUMS:
+  FBSnapshotTestCase: '094f9f314decbabe373b87cc339bea235a63e07a'
   PINCache: a89c8f609232afac77128557bd12c861844423d7
   PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
   PINRemoteImage: e4e02e15a6f96cedbcef2abf1c9c1228dc9897d7
   PromptMessage: 201594328dfcd7d96c2d1aae0cfa78cee298a2a2
   Texture: 18664254419f35de27af76399b3b265cbad5740a
 
-PODFILE CHECKSUM: fd6a8ab728e847a4e14383a3874888169d970a41
+PODFILE CHECKSUM: 7315141ecbca185cf927e4e3911a908b42ff19ae
 
 COCOAPODS: 1.2.1
