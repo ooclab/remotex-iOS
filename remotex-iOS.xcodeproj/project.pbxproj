@@ -17,6 +17,16 @@
 		523605731EC3003600AFB95D /* JobFeedTableNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605721EC3003600AFB95D /* JobFeedTableNodeController.swift */; };
 		523605781EC3005A00AFB95D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605751EC3005A00AFB95D /* Date.swift */; };
 		5236057A1EC3005A00AFB95D /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605771EC3005A00AFB95D /* URL.swift */; };
+		524593EC1EDE9EAC00045ADF /* remotex-iOSTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 52F7A6F91EB45BFA00CF9ADA /* remotex-iOSTests.xctest */; };
+		524593EF1EDE9EC000045ADF /* PromptMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524593E81EDE9E0C00045ADF /* PromptMessage.framework */; };
+		524593F01EDE9EC000045ADF /* PromptMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524593E81EDE9E0C00045ADF /* PromptMessage.framework */; };
+		524593F11EDE9EC900045ADF /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525B3D1B1EC95487007B5B68 /* AsyncDisplayKit.framework */; };
+		524593F61EDEA09A00045ADF /* AboutNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204A94B1EC7190C0089BB14 /* AboutNode.swift */; };
+		524593F81EDEA09F00045ADF /* JobTableNodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5236056F1EC3002B00AFB95D /* JobTableNodeCell.swift */; };
+		524594091EDFB52200045ADF /* AboutNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524593FC1EDFB52200045ADF /* AboutNodeTests.swift */; };
+		5245940F1EDFB52200045ADF /* TextureSnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524594081EDFB52200045ADF /* TextureSnapshotTestCase.swift */; };
+		5245941C1EDFC71E00045ADF /* testInit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 524594181EDFC71E00045ADF /* testInit@2x.png */; };
+		5245941D1EDFC71E00045ADF /* testInit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5245941B1EDFC71E00045ADF /* testInit@2x.png */; };
 		525B3D181EC9514E007B5B68 /* JobModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B3D171EC9514E007B5B68 /* JobModelTests.swift */; };
 		525B3D1A1EC9546D007B5B68 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525B3D191EC9546D007B5B68 /* XCTest.framework */; };
 		525B3D1C1EC95487007B5B68 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525B3D1B1EC95487007B5B68 /* AsyncDisplayKit.framework */; };
@@ -33,22 +43,29 @@
 		52E8F02C1EB9CBF300866728 /* OOClubConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F02B1EB9CBF300866728 /* OOClubConvenience.swift */; };
 		52E8F02E1EBADA3C00866728 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F02D1EBADA3C00866728 /* Constants.swift */; };
 		52E9BD881ED674A900AAF714 /* PromptMessageWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9BD871ED674A900AAF714 /* PromptMessageWrap.swift */; };
+		52F43E2A1EDE97FB00A9406D /* AboutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204A94D1EC768C00089BB14 /* AboutModel.swift */; };
+		52F43E2B1EDE981F00A9406D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F02D1EBADA3C00866728 /* Constants.swift */; };
+		52F43E2D1EDE987A00A9406D /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605771EC3005A00AFB95D /* URL.swift */; };
+		52F43E2F1EDE987D00A9406D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605751EC3005A00AFB95D /* Date.swift */; };
+		52F43E311EDE988000A9406D /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B3D1D1EC99B8A007B5B68 /* NumberFormatter.swift */; };
+		52F43E331EDE988300A9406D /* PromptMessageWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9BD871ED674A900AAF714 /* PromptMessageWrap.swift */; };
+		52F43E351EDE989500A9406D /* JobFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F01A1EB87FB700866728 /* JobFeedModel.swift */; };
+		52F43E371EDE989800A9406D /* JobPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F0291EB9C9CB00866728 /* JobPageModel.swift */; };
+		52F43E391EDE989B00A9406D /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F0181EB87F8300866728 /* JobModel.swift */; };
+		52F43E3B1EDE989E00A9406D /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F0201EB9792B00866728 /* CategoryModel.swift */; };
+		52F43E3D1EDE98A100A9406D /* PlatformModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F01E1EB976F000866728 /* PlatformModel.swift */; };
+		52F43E3F1EDE98A400A9406D /* RoleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F0221EB983B600866728 /* RoleModel.swift */; };
+		52F43E411EDE98A600A9406D /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F0241EB9844500866728 /* SkillModel.swift */; };
+		52F43E431EDE98BC00A9406D /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F0271EB9BAB400866728 /* WebService.swift */; };
+		52F43E451EDE98BF00A9406D /* OOClubConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8F02B1EB9CBF300866728 /* OOClubConvenience.swift */; };
 		52F7A6E61EB45BF900CF9ADA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7A6E51EB45BF900CF9ADA /* AppDelegate.swift */; };
 		52F7A6F01EB45BF900CF9ADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F7A6EF1EB45BF900CF9ADA /* Assets.xcassets */; };
 		52F7A6F31EB45BF900CF9ADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F7A6F11EB45BF900CF9ADA /* LaunchScreen.storyboard */; };
 		52F7A6FE1EB45BFA00CF9ADA /* remotex_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7A6FD1EB45BFA00CF9ADA /* remotex_iOSTests.swift */; };
-		52F7A7091EB45BFA00CF9ADA /* remotex_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7A7081EB45BFA00CF9ADA /* remotex_iOSUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		52F7A6FA1EB45BFA00CF9ADA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 52F7A6DA1EB45BF900CF9ADA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 52F7A6E11EB45BF900CF9ADA;
-			remoteInfo = "remotex-iOS";
-		};
-		52F7A7051EB45BFA00CF9ADA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52F7A6DA1EB45BF900CF9ADA /* Project object */;
 			proxyType = 1;
@@ -66,6 +83,13 @@
 		523605721EC3003600AFB95D /* JobFeedTableNodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobFeedTableNodeController.swift; sourceTree = "<group>"; };
 		523605751EC3005A00AFB95D /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		523605771EC3005A00AFB95D /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		524593E61EDE9E0800045ADF /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = "../../Library/Developer/Xcode/DerivedData/remotex-iOS-aphdgijnlysnjjgbibfuniyplvir/Build/Products/Debug-iphonesimulator/FBSnapshotTestCase/FBSnapshotTestCase.framework"; sourceTree = "<group>"; };
+		524593E81EDE9E0C00045ADF /* PromptMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromptMessage.framework; path = "../../Library/Developer/Xcode/DerivedData/remotex-iOS-aphdgijnlysnjjgbibfuniyplvir/Build/Products/Debug-iphonesimulator/PromptMessage/PromptMessage.framework"; sourceTree = "<group>"; };
+		524593F21EDE9F5100045ADF /* Pods_remotex_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_remotex_iOS.framework; path = "../../Library/Developer/Xcode/DerivedData/remotex-iOS-aphdgijnlysnjjgbibfuniyplvir/Build/Products/Debug-iphonesimulator/Pods_remotex_iOS.framework"; sourceTree = "<group>"; };
+		524593FC1EDFB52200045ADF /* AboutNodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutNodeTests.swift; sourceTree = "<group>"; };
+		524594081EDFB52200045ADF /* TextureSnapshotTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextureSnapshotTestCase.swift; sourceTree = "<group>"; };
+		524594181EDFC71E00045ADF /* testInit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testInit@2x.png"; sourceTree = "<group>"; };
+		5245941B1EDFC71E00045ADF /* testInit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testInit@2x.png"; sourceTree = "<group>"; };
 		525B3D171EC9514E007B5B68 /* JobModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobModelTests.swift; sourceTree = "<group>"; };
 		525B3D191EC9546D007B5B68 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		525B3D1B1EC95487007B5B68 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncDisplayKit.framework; path = "../../Library/Developer/Xcode/DerivedData/remotex-iOS-aphdgijnlysnjjgbibfuniyplvir/Build/Products/Debug-iphonesimulator/Texture/AsyncDisplayKit.framework"; sourceTree = "<group>"; };
@@ -90,9 +114,6 @@
 		52F7A6F91EB45BFA00CF9ADA /* remotex-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "remotex-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F7A6FD1EB45BFA00CF9ADA /* remotex_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remotex_iOSTests.swift; sourceTree = "<group>"; };
 		52F7A6FF1EB45BFA00CF9ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52F7A7041EB45BFA00CF9ADA /* remotex-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "remotex-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52F7A7081EB45BFA00CF9ADA /* remotex_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remotex_iOSUITests.swift; sourceTree = "<group>"; };
-		52F7A70A1EB45BFA00CF9ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAF796C345A4E66437690DCB /* Pods_remotex_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_remotex_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25A0AFF8D6BC82068546692 /* Pods-remotex-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remotex-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-remotex-iOSTests/Pods-remotex-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		C7ECB0CF3BE20955121C8A1F /* Pods_remotex_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_remotex_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +127,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524593EF1EDE9EC000045ADF /* PromptMessage.framework in Frameworks */,
 				417F5ADCEAA63BB61FCAFE36 /* Pods_remotex_iOS.framework in Frameworks */,
+				524593F11EDE9EC900045ADF /* AsyncDisplayKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,14 +139,8 @@
 			files = (
 				525B3D1C1EC95487007B5B68 /* AsyncDisplayKit.framework in Frameworks */,
 				525B3D1A1EC9546D007B5B68 /* XCTest.framework in Frameworks */,
+				524593F01EDE9EC000045ADF /* PromptMessage.framework in Frameworks */,
 				03A35660B287A823DAD6B23D /* Pods_remotex_iOSTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52F7A7011EB45BFA00CF9ADA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +150,9 @@
 		49A5D400CAD8A6DE3636AF76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				524593F21EDE9F5100045ADF /* Pods_remotex_iOS.framework */,
+				524593E81EDE9E0C00045ADF /* PromptMessage.framework */,
+				524593E61EDE9E0800045ADF /* FBSnapshotTestCase.framework */,
 				525B3D1B1EC95487007B5B68 /* AsyncDisplayKit.framework */,
 				525B3D191EC9546D007B5B68 /* XCTest.framework */,
 				BAF796C345A4E66437690DCB /* Pods_remotex_iOS.framework */,
@@ -171,6 +191,57 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		524593FB1EDFB52200045ADF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				524594081EDFB52200045ADF /* TextureSnapshotTestCase.swift */,
+				524593FC1EDFB52200045ADF /* AboutNodeTests.swift */,
+				524594161EDFC71E00045ADF /* ReferenceImages_64 */,
+				524594191EDFC71E00045ADF /* ReferenceImages_iOS_10 */,
+				524593FD1EDFB52200045ADF /* FailureDiffs */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		524593FD1EDFB52200045ADF /* FailureDiffs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FailureDiffs;
+			sourceTree = "<group>";
+		};
+		524594161EDFC71E00045ADF /* ReferenceImages_64 */ = {
+			isa = PBXGroup;
+			children = (
+				524594171EDFC71E00045ADF /* remotex_iOSTests.AboutNodeTests */,
+			);
+			path = ReferenceImages_64;
+			sourceTree = "<group>";
+		};
+		524594171EDFC71E00045ADF /* remotex_iOSTests.AboutNodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				524594181EDFC71E00045ADF /* testInit@2x.png */,
+			);
+			path = remotex_iOSTests.AboutNodeTests;
+			sourceTree = "<group>";
+		};
+		524594191EDFC71E00045ADF /* ReferenceImages_iOS_10 */ = {
+			isa = PBXGroup;
+			children = (
+				5245941A1EDFC71E00045ADF /* remotex_iOSTests.AboutNodeTests */,
+			);
+			path = ReferenceImages_iOS_10;
+			sourceTree = "<group>";
+		};
+		5245941A1EDFC71E00045ADF /* remotex_iOSTests.AboutNodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5245941B1EDFC71E00045ADF /* testInit@2x.png */,
+			);
+			path = remotex_iOSTests.AboutNodeTests;
+			sourceTree = "<group>";
+		};
 		52E2DEAC1EB4D2110064984C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +271,6 @@
 			children = (
 				52F7A6E41EB45BF900CF9ADA /* remotex-iOS */,
 				52F7A6FC1EB45BFA00CF9ADA /* remotex-iOSTests */,
-				52F7A7071EB45BFA00CF9ADA /* remotex-iOSUITests */,
 				52F7A6E31EB45BF900CF9ADA /* Products */,
 				BB79764FDCA22A5465315AAD /* Pods */,
 				49A5D400CAD8A6DE3636AF76 /* Frameworks */,
@@ -212,7 +282,6 @@
 			children = (
 				52F7A6E21EB45BF900CF9ADA /* remotex-iOS.app */,
 				52F7A6F91EB45BFA00CF9ADA /* remotex-iOSTests.xctest */,
-				52F7A7041EB45BFA00CF9ADA /* remotex-iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,17 +310,9 @@
 				52F7A6FF1EB45BFA00CF9ADA /* Info.plist */,
 				525B3D171EC9514E007B5B68 /* JobModelTests.swift */,
 				5230634E1ECD8B0E00FB21E0 /* JobFeedTableNodeControllerTests.swift */,
+				524593FB1EDFB52200045ADF /* View */,
 			);
 			path = "remotex-iOSTests";
-			sourceTree = "<group>";
-		};
-		52F7A7071EB45BFA00CF9ADA /* remotex-iOSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				52F7A7081EB45BFA00CF9ADA /* remotex_iOSUITests.swift */,
-				52F7A70A1EB45BFA00CF9ADA /* Info.plist */,
-			);
-			path = "remotex-iOSUITests";
 			sourceTree = "<group>";
 		};
 		BB79764FDCA22A5465315AAD /* Pods */ = {
@@ -309,24 +370,6 @@
 			productReference = 52F7A6F91EB45BFA00CF9ADA /* remotex-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		52F7A7031EB45BFA00CF9ADA /* remotex-iOSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 52F7A7131EB45BFA00CF9ADA /* Build configuration list for PBXNativeTarget "remotex-iOSUITests" */;
-			buildPhases = (
-				52F7A7001EB45BFA00CF9ADA /* Sources */,
-				52F7A7011EB45BFA00CF9ADA /* Frameworks */,
-				52F7A7021EB45BFA00CF9ADA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				52F7A7061EB45BFA00CF9ADA /* PBXTargetDependency */,
-			);
-			name = "remotex-iOSUITests";
-			productName = "remotex-iOSUITests";
-			productReference = 52F7A7041EB45BFA00CF9ADA /* remotex-iOSUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -343,12 +386,6 @@
 						ProvisioningStyle = Automatic;
 					};
 					52F7A6F81EB45BFA00CF9ADA = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = XS9T3GFZ5N;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 52F7A6E11EB45BF900CF9ADA;
-					};
-					52F7A7031EB45BFA00CF9ADA = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = XS9T3GFZ5N;
 						ProvisioningStyle = Automatic;
@@ -371,7 +408,6 @@
 			targets = (
 				52F7A6E11EB45BF900CF9ADA /* remotex-iOS */,
 				52F7A6F81EB45BFA00CF9ADA /* remotex-iOSTests */,
-				52F7A7031EB45BFA00CF9ADA /* remotex-iOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -390,13 +426,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52F7A7021EB45BFA00CF9ADA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				5245941D1EDFC71E00045ADF /* testInit@2x.png in Resources */,
+				5245941C1EDFC71E00045ADF /* testInit@2x.png in Resources */,
+				524593EC1EDE9EAC00045ADF /* remotex-iOSTests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,17 +560,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F43E3D1EDE98A100A9406D /* PlatformModel.swift in Sources */,
+				52F43E3B1EDE989E00A9406D /* CategoryModel.swift in Sources */,
+				52F43E2B1EDE981F00A9406D /* Constants.swift in Sources */,
 				52F7A6FE1EB45BFA00CF9ADA /* remotex_iOSTests.swift in Sources */,
+				52F43E431EDE98BC00A9406D /* WebService.swift in Sources */,
+				52F43E2F1EDE987D00A9406D /* Date.swift in Sources */,
 				525B3D181EC9514E007B5B68 /* JobModelTests.swift in Sources */,
 				5230634F1ECD8B0E00FB21E0 /* JobFeedTableNodeControllerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52F7A7001EB45BFA00CF9ADA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52F7A7091EB45BFA00CF9ADA /* remotex_iOSUITests.swift in Sources */,
+				524593F81EDEA09F00045ADF /* JobTableNodeCell.swift in Sources */,
+				5245940F1EDFB52200045ADF /* TextureSnapshotTestCase.swift in Sources */,
+				524594091EDFB52200045ADF /* AboutNodeTests.swift in Sources */,
+				52F43E391EDE989B00A9406D /* JobModel.swift in Sources */,
+				52F43E311EDE988000A9406D /* NumberFormatter.swift in Sources */,
+				52F43E2A1EDE97FB00A9406D /* AboutModel.swift in Sources */,
+				52F43E371EDE989800A9406D /* JobPageModel.swift in Sources */,
+				52F43E411EDE98A600A9406D /* SkillModel.swift in Sources */,
+				52F43E451EDE98BF00A9406D /* OOClubConvenience.swift in Sources */,
+				52F43E331EDE988300A9406D /* PromptMessageWrap.swift in Sources */,
+				52F43E2D1EDE987A00A9406D /* URL.swift in Sources */,
+				52F43E351EDE989500A9406D /* JobFeedModel.swift in Sources */,
+				52F43E3F1EDE98A400A9406D /* RoleModel.swift in Sources */,
+				524593F61EDEA09A00045ADF /* AboutNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,11 +592,6 @@
 			isa = PBXTargetDependency;
 			target = 52F7A6E11EB45BF900CF9ADA /* remotex-iOS */;
 			targetProxy = 52F7A6FA1EB45BFA00CF9ADA /* PBXContainerItemProxy */;
-		};
-		52F7A7061EB45BFA00CF9ADA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 52F7A6E11EB45BF900CF9ADA /* remotex-iOS */;
-			targetProxy = 52F7A7051EB45BFA00CF9ADA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -668,6 +706,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FF8E597FF65CC9F0790C1A66 /* Pods-remotex-iOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XS9T3GFZ5N;
 				INFOPLIST_FILE = "remotex-iOS/Info.plist";
@@ -683,6 +722,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FD48D96C676C5B7252A34E10 /* Pods-remotex-iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XS9T3GFZ5N;
 				INFOPLIST_FILE = "remotex-iOS/Info.plist";
@@ -698,7 +738,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FC908F34B19D56F975723647 /* Pods-remotex-iOSTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = XS9T3GFZ5N;
 				INFOPLIST_FILE = "remotex-iOSTests/Info.plist";
@@ -714,7 +754,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C25A0AFF8D6BC82068546692 /* Pods-remotex-iOSTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = XS9T3GFZ5N;
 				INFOPLIST_FILE = "remotex-iOSTests/Info.plist";
@@ -723,34 +763,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/remotex-iOS.app/remotex-iOS";
-			};
-			name = Release;
-		};
-		52F7A7141EB45BFA00CF9ADA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = XS9T3GFZ5N;
-				INFOPLIST_FILE = "remotex-iOSUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.archimboldi.remotex-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "remotex-iOS";
-			};
-			name = Debug;
-		};
-		52F7A7151EB45BFA00CF9ADA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = XS9T3GFZ5N;
-				INFOPLIST_FILE = "remotex-iOSUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.archimboldi.remotex-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "remotex-iOS";
 			};
 			name = Release;
 		};
@@ -780,15 +792,6 @@
 			buildConfigurations = (
 				52F7A7111EB45BFA00CF9ADA /* Debug */,
 				52F7A7121EB45BFA00CF9ADA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		52F7A7131EB45BFA00CF9ADA /* Build configuration list for PBXNativeTarget "remotex-iOSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				52F7A7141EB45BFA00CF9ADA /* Debug */,
-				52F7A7151EB45BFA00CF9ADA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
