@@ -6,13 +6,17 @@ cache:
 git:
   depth: 10
 
+rvm: 2.4.1
+
 before_install:
   - brew update
   - brew outdated xctool || brew upgrade xctool
   - gem install cocoapods -v 1.2.1
   - gem install xcpretty -v 0.2.8
   - gem install xcpretty-travis-formatter
+  - pod repo update
   - xcrun simctl list
+
 xcode_project: remotex-iOS.xcodeproj
 xcode_scheme: remotex-iOSTests
 xcode_sdk: iphonesimulator10.3
