@@ -1,0 +1,29 @@
+language: objective-c
+cache:
+- bundler
+- cocoapods
+git:
+  depth: 10
+os: osx
+osx_image: xcode8.3
+xcode_sdk: iphonesimulator10.3
+xcode_project: remotex-iOS.xcodeproj
+xcode_scheme: remotex-iOSTests
+before_install:
+- brew update
+- brew remove --force xctool
+- brew install xctool --HEAD
+- gem install cocoapods -v 1.2.1
+- gem install xcpretty -v 0.2.8
+- gem install xcpretty-travis-formatter
+- pod repo update
+- xcrun simctl list
+script:
+- xcodebuild -scheme remotex-iOS -workspace remotex-iOS.xcworkspace -sdk iphonesimulator10.3
+  -destination 'name=iPhone 7,OS=10.3' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+- xcodebuild -scheme remotex-iOSTests -workspace remotex-iOS.xcworkspace -sdk iphonesimulator10.3
+  -destination 'name=iPhone 7,OS=10.3' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+  test
+notifications:
+  slack:
+    secure: KqRaVUfCbdeElfE4TFVcgQXL4DOzcoyG++XVTURF3IrWR93sJhxR/apTq9k2AArqf7YzhyiFbAizFGK2BILLAmt8HZBWmdv8TMJz2wawz/SVSHP6hDzUOqLfnozxbcBz1olFzlA8inRdwCCb/n4ZKLRxj6z7y1OT08nSYSMQGgM/EGcWz0nWnETqCIWOyKMO2Mm09g2KE9cneViMilurO6gVvq4xNPdfDD57keLMsCK2rL2f7ce/rcxfgrWayLIVK4k7nY/Qiiwu07crcq6/lmdILR+0v/qq8/2ZKZXxNJXFCxB562+19P/kWOmeKtKyZaH8EnywLFMmQOt1Sg6FDxdAPDcXpHfaxgUVxM0+4CBWnBcs9AYP3kx1zs/hIW09v20F+EBuERyk1JFECVoXa3tCAIB/kops3Nry76mvh7Ju8auBpgNfLwfxjfVZoYKphNqPh1YTdDa3mQV+ZEhJPX9CrCFZ3AFvjj+qAvq4+7n7+JY/ldLOBgthcmyfmy/nEV/nxo1Xf2/zi+2MO9ko64IcpE2ZdpfKcRl/Jc/wixvwsyZV+n+O6fiWUskSpAFnq/5K8Qu2dPajN0B6qDzDY0XvLHrYW7/VycYByK9rV5Rq7DYGNh5K80QF8VMcBW0fmHUrUsuC1n+NX4ExC36SqC0aO4pqxDVcLPGOKLdcG/o=
