@@ -6,20 +6,21 @@ cache:
 git:
   depth: 10
 
-before_install:
-  - brew update
-  - brew outdated xctool || brew upgrade xctool
-  - gem install cocoapods -v 1.2.1
-  - gem install xcpretty -v 0.2.8
-  - gem install xcpretty-travis-formatter
-  - pod repo update
-  - xcrun simctl list
-
 os: osx
 osx_image: xcode8.3
 xcode_sdk: iphonesimulator10.3
 xcode_project: remotex-iOS.xcodeproj
 xcode_scheme: remotex-iOSTests
+
+before_install:
+  - brew update
+  - brew remove --force xctool
+  - brew install xctool --HEAD
+  - gem install cocoapods -v 1.2.1
+  - gem install xcpretty -v 0.2.8
+  - gem install xcpretty-travis-formatter
+  - pod repo update
+  - xcrun simctl list
 
 script:
   - xcodebuild -scheme remotex-iOS -workspace remotex-iOS.xcworkspace -sdk iphonesimulator10.3 -destination 'name=iPhone 7,OS=10.3' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
