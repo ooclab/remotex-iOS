@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03A35660B287A823DAD6B23D /* Pods_remotex_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7ECB0CF3BE20955121C8A1F /* Pods_remotex_iOSTests.framework */; };
-		417F5ADCEAA63BB61FCAFE36 /* Pods_remotex_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF796C345A4E66437690DCB /* Pods_remotex_iOS.framework */; };
 		5204A94A1EC5A7DA0089BB14 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204A9491EC5A7DA0089BB14 /* AboutViewController.swift */; };
 		5204A94C1EC7190C0089BB14 /* AboutNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204A94B1EC7190C0089BB14 /* AboutNode.swift */; };
 		5204A94E1EC768C00089BB14 /* AboutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204A94D1EC768C00089BB14 /* AboutModel.swift */; };
@@ -17,9 +15,13 @@
 		523605731EC3003600AFB95D /* JobFeedTableNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605721EC3003600AFB95D /* JobFeedTableNodeController.swift */; };
 		523605781EC3005A00AFB95D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605751EC3005A00AFB95D /* Date.swift */; };
 		5236057A1EC3005A00AFB95D /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523605771EC3005A00AFB95D /* URL.swift */; };
-		524593EC1EDE9EAC00045ADF /* remotex-iOSTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 52F7A6F91EB45BFA00CF9ADA /* remotex-iOSTests.xctest */; };
+		523CA7121EE1071A00B8EB20 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523CA70E1EE1071A00B8EB20 /* PINCache.framework */; };
+		523CA7131EE1071A00B8EB20 /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523CA70F1EE1071A00B8EB20 /* PINOperation.framework */; };
+		523CA7141EE1071A00B8EB20 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523CA7101EE1071A00B8EB20 /* PINRemoteImage.framework */; };
+		523CA7161EE1074600B8EB20 /* Pods_remotex_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523CA7111EE1071A00B8EB20 /* Pods_remotex_iOSTests.framework */; };
+		523CA7171EE1074C00B8EB20 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524593E61EDE9E0800045ADF /* FBSnapshotTestCase.framework */; };
+		523CA7181EE1076F00B8EB20 /* Pods_remotex_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524593F21EDE9F5100045ADF /* Pods_remotex_iOS.framework */; };
 		524593EF1EDE9EC000045ADF /* PromptMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524593E81EDE9E0C00045ADF /* PromptMessage.framework */; };
-		524593F01EDE9EC000045ADF /* PromptMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524593E81EDE9E0C00045ADF /* PromptMessage.framework */; };
 		524593F11EDE9EC900045ADF /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525B3D1B1EC95487007B5B68 /* AsyncDisplayKit.framework */; };
 		524593F61EDEA09A00045ADF /* AboutNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204A94B1EC7190C0089BB14 /* AboutNode.swift */; };
 		524593F81EDEA09F00045ADF /* JobTableNodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5236056F1EC3002B00AFB95D /* JobTableNodeCell.swift */; };
@@ -62,6 +64,7 @@
 		52F7A6F01EB45BF900CF9ADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F7A6EF1EB45BF900CF9ADA /* Assets.xcassets */; };
 		52F7A6F31EB45BF900CF9ADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F7A6F11EB45BF900CF9ADA /* LaunchScreen.storyboard */; };
 		52F7A6FE1EB45BFA00CF9ADA /* remotex_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7A6FD1EB45BFA00CF9ADA /* remotex_iOSTests.swift */; };
+		DD8C1A9411BF837686EB9EB5 /* Pods_remotex_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D249E964E6ABE362AAAF464 /* Pods_remotex_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D249E964E6ABE362AAAF464 /* Pods_remotex_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_remotex_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5204A9491EC5A7DA0089BB14 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		5204A94B1EC7190C0089BB14 /* AboutNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutNode.swift; sourceTree = "<group>"; };
 		5204A94D1EC768C00089BB14 /* AboutModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutModel.swift; sourceTree = "<group>"; };
@@ -83,6 +87,10 @@
 		523605721EC3003600AFB95D /* JobFeedTableNodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobFeedTableNodeController.swift; sourceTree = "<group>"; };
 		523605751EC3005A00AFB95D /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		523605771EC3005A00AFB95D /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		523CA70E1EE1071A00B8EB20 /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = "../../Library/Developer/Xcode/DerivedData/remotex-iOS-aphdgijnlysnjjgbibfuniyplvir/Build/Products/Debug-iphonesimulator/PINCache/PINCache.framework"; sourceTree = "<group>"; };
+		523CA70F1EE1071A00B8EB20 /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = "../../Library/Developer/Xcode/DerivedData/remotex-iOS-aphdgijnlysnjjgbibfuniyplvir/Build/Products/Debug-iphonesimulator/PINOperation/PINOperation.framework"; sourceTree = "<group>"; };
+		523CA7101EE1071A00B8EB20 /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = "../../Library/Developer/Xcode/DerivedData/remotex-iOS-aphdgijnlysnjjgbibfuniyplvir/Build/Products/Debug-iphonesimulator/PINRemoteImage/PINRemoteImage.framework"; sourceTree = "<group>"; };
+		523CA7111EE1071A00B8EB20 /* Pods_remotex_iOSTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_remotex_iOSTests.framework; path = "../../Library/Developer/Xcode/DerivedData/remotex-iOS-aphdgijnlysnjjgbibfuniyplvir/Build/Products/Debug-iphonesimulator/Pods_remotex_iOSTests.framework"; sourceTree = "<group>"; };
 		524593E61EDE9E0800045ADF /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = "../../Library/Developer/Xcode/DerivedData/remotex-iOS-aphdgijnlysnjjgbibfuniyplvir/Build/Products/Debug-iphonesimulator/FBSnapshotTestCase/FBSnapshotTestCase.framework"; sourceTree = "<group>"; };
 		524593E81EDE9E0C00045ADF /* PromptMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromptMessage.framework; path = "../../Library/Developer/Xcode/DerivedData/remotex-iOS-aphdgijnlysnjjgbibfuniyplvir/Build/Products/Debug-iphonesimulator/PromptMessage/PromptMessage.framework"; sourceTree = "<group>"; };
 		524593F21EDE9F5100045ADF /* Pods_remotex_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_remotex_iOS.framework; path = "../../Library/Developer/Xcode/DerivedData/remotex-iOS-aphdgijnlysnjjgbibfuniyplvir/Build/Products/Debug-iphonesimulator/Pods_remotex_iOS.framework"; sourceTree = "<group>"; };
@@ -114,9 +122,8 @@
 		52F7A6F91EB45BFA00CF9ADA /* remotex-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "remotex-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F7A6FD1EB45BFA00CF9ADA /* remotex_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remotex_iOSTests.swift; sourceTree = "<group>"; };
 		52F7A6FF1EB45BFA00CF9ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAF796C345A4E66437690DCB /* Pods_remotex_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_remotex_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BBBDABFBA042E358F89FB56 /* Pods_remotex_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_remotex_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25A0AFF8D6BC82068546692 /* Pods-remotex-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remotex-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-remotex-iOSTests/Pods-remotex-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		C7ECB0CF3BE20955121C8A1F /* Pods_remotex_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_remotex_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC908F34B19D56F975723647 /* Pods-remotex-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remotex-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-remotex-iOSTests/Pods-remotex-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD48D96C676C5B7252A34E10 /* Pods-remotex-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remotex-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-remotex-iOS/Pods-remotex-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		FF8E597FF65CC9F0790C1A66 /* Pods-remotex-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remotex-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-remotex-iOS/Pods-remotex-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,9 +134,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523CA7181EE1076F00B8EB20 /* Pods_remotex_iOS.framework in Frameworks */,
+				523CA7121EE1071A00B8EB20 /* PINCache.framework in Frameworks */,
+				523CA7131EE1071A00B8EB20 /* PINOperation.framework in Frameworks */,
+				523CA7141EE1071A00B8EB20 /* PINRemoteImage.framework in Frameworks */,
 				524593EF1EDE9EC000045ADF /* PromptMessage.framework in Frameworks */,
-				417F5ADCEAA63BB61FCAFE36 /* Pods_remotex_iOS.framework in Frameworks */,
 				524593F11EDE9EC900045ADF /* AsyncDisplayKit.framework in Frameworks */,
+				DD8C1A9411BF837686EB9EB5 /* Pods_remotex_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,10 +148,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523CA7171EE1074C00B8EB20 /* FBSnapshotTestCase.framework in Frameworks */,
+				523CA7161EE1074600B8EB20 /* Pods_remotex_iOSTests.framework in Frameworks */,
 				525B3D1C1EC95487007B5B68 /* AsyncDisplayKit.framework in Frameworks */,
 				525B3D1A1EC9546D007B5B68 /* XCTest.framework in Frameworks */,
-				524593F01EDE9EC000045ADF /* PromptMessage.framework in Frameworks */,
-				03A35660B287A823DAD6B23D /* Pods_remotex_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,13 +161,17 @@
 		49A5D400CAD8A6DE3636AF76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				523CA70E1EE1071A00B8EB20 /* PINCache.framework */,
+				523CA70F1EE1071A00B8EB20 /* PINOperation.framework */,
+				523CA7101EE1071A00B8EB20 /* PINRemoteImage.framework */,
+				523CA7111EE1071A00B8EB20 /* Pods_remotex_iOSTests.framework */,
 				524593F21EDE9F5100045ADF /* Pods_remotex_iOS.framework */,
 				524593E81EDE9E0C00045ADF /* PromptMessage.framework */,
 				524593E61EDE9E0800045ADF /* FBSnapshotTestCase.framework */,
 				525B3D1B1EC95487007B5B68 /* AsyncDisplayKit.framework */,
 				525B3D191EC9546D007B5B68 /* XCTest.framework */,
-				BAF796C345A4E66437690DCB /* Pods_remotex_iOS.framework */,
-				C7ECB0CF3BE20955121C8A1F /* Pods_remotex_iOSTests.framework */,
+				3D249E964E6ABE362AAAF464 /* Pods_remotex_iOS.framework */,
+				7BBBDABFBA042E358F89FB56 /* Pods_remotex_iOSTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -426,7 +441,6 @@
 			files = (
 				5245941D1EDFC71E00045ADF /* testInit@2x.png in Resources */,
 				5245941C1EDFC71E00045ADF /* testInit@2x.png in Resources */,
-				524593EC1EDE9EAC00045ADF /* remotex-iOSTests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
