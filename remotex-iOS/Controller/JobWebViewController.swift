@@ -30,6 +30,10 @@ class JobWebViewController: UIViewController, WKNavigationDelegate {
         super.init(coder: aDecoder)
     }
     
+    deinit {
+        webView.removeObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress))
+    }
+    
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration.init()
         webView = WKWebView.init(frame: CGRect.zero, configuration: webConfiguration)
@@ -50,9 +54,7 @@ class JobWebViewController: UIViewController, WKNavigationDelegate {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        webView.removeObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress))
         progressView.removeFromSuperview()
-        
         super.viewWillDisappear(animated)
     }
     
