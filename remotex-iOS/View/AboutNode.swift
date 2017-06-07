@@ -15,6 +15,7 @@ class AboutNode: ASDisplayNode, ASTextNodeDelegate {
     let scrollNode = ASScrollNode()
     let descriptionNode = ASTextNode()
     let authorNode = ASTextNode()
+    let reviewNode = ASTextNode()
     let linkInfoNode = ASTextNode()
     let versionNode = ASTextNode()
     
@@ -34,6 +35,9 @@ class AboutNode: ASDisplayNode, ASTextNodeDelegate {
         authorNode.attributedText = self.attrStringForAboutAuthor(withSize: Constants.AboutLayout.DescriptionFontSize)
         authorNode.isUserInteractionEnabled = true
         authorNode.delegate = self
+        reviewNode.attributedText = self.attrStringForAboutReview(withSize: Constants.AboutLayout.DescriptionFontSize)
+        reviewNode.isUserInteractionEnabled = true
+        reviewNode.delegate = self
         linkInfoNode.attributedText = self.attrStringForAboutLinkInfo(withSize: Constants.AboutLayout.DescriptionFontSize)
         linkInfoNode.isUserInteractionEnabled = true
         linkInfoNode.delegate = self
@@ -45,6 +49,7 @@ class AboutNode: ASDisplayNode, ASTextNodeDelegate {
         scrollNode.addSubnode(sloganNode)
         scrollNode.addSubnode(descriptionNode)
         scrollNode.addSubnode(authorNode)
+        scrollNode.addSubnode(reviewNode)
         scrollNode.addSubnode(linkInfoNode)
         scrollNode.addSubnode(versionNode)
         
@@ -57,6 +62,7 @@ class AboutNode: ASDisplayNode, ASTextNodeDelegate {
         scrollNode.automaticallyManagesSubnodes = true
         scrollNode.automaticallyManagesContentSize = true
         scrollNode.scrollableDirections = .down
+        scrollNode.view.showsVerticalScrollIndicator = false
         scrollNode.layoutSpecBlock = { node, constrainedSize in
             self.titleNode.style.alignSelf = .center
             self.sloganNode.style.alignSelf = .center
@@ -66,13 +72,15 @@ class AboutNode: ASDisplayNode, ASTextNodeDelegate {
             self.descriptionNode.style.alignSelf = .start
             self.authorNode.style.alignSelf = .start
             self.authorNode.style.spacingBefore = 32.0
-            self.authorNode.style.spacingAfter = 32.0
+            self.reviewNode.style.alignSelf = .start
+            self.reviewNode.style.spacingBefore = 32.0
+            self.reviewNode.style.spacingAfter = 32.0
             self.linkInfoNode.style.alignSelf = .start
             self.linkInfoNode.style.spacingAfter = 32.0
             self.versionNode.style.alignSelf = .center
             self.versionNode.style.spacingAfter = 8.0
             let stack = ASStackLayoutSpec.vertical()
-            stack.children = [self.titleNode, self.sloganNode, self.descriptionNode, self.authorNode, self.linkInfoNode, self.versionNode]
+            stack.children = [self.titleNode, self.sloganNode, self.descriptionNode, self.authorNode, self.reviewNode, self.linkInfoNode, self.versionNode]
             return stack
         }
         
@@ -103,6 +111,20 @@ class AboutNode: ASDisplayNode, ASTextNodeDelegate {
             NSFontAttributeName: UIFont.systemFont(ofSize: size)
         ]
         return NSAttributedString.init(string: self.aboutModel.description, attributes: attr)
+    }
+    
+    private func attrStringForAboutReview(withSize size: CGFloat) -> NSAttributedString {
+        let attr = [
+            NSForegroundColorAttributeName: UIColor.black,
+            NSFontAttributeName: UIFont.systemFont(ofSize: size)
+        ]
+        let attributedString = NSMutableAttributedString.init(string: self.aboutModel.review)
+        attributedString.addAttributes(attr, range: NSRange.init(location: 0, length: (self.aboutModel.review as NSString).length))
+        attributedString.addAttributes([NSLinkAttributeName: Constants.AppStore.ReviewURL,
+                                        NSForegroundColorAttributeName: UIColor.blue,
+                                        NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue, NSUnderlineColorAttributeName: UIColor.clear],
+                                       range: (self.aboutModel.review as NSString).range(of: Constants.AppStore.TitleText))
+        return attributedString
     }
     
     private func attrStringForAboutAuthor(withSize size: CGFloat) -> NSAttributedString {
@@ -170,6 +192,12 @@ class AboutNode: ASDisplayNode, ASTextNodeDelegate {
     
     func textNode(_ textNode: ASTextNode, tappedLinkAttribute attribute: String, value: Any, at point: CGPoint, textRange: NSRange) {
         guard let url = value as? URL else { return }
-        UIApplication.shared.openURL(url)
+        if UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                 UIApplication.shared.openURL(url)
+            }
+        }
     }
 }

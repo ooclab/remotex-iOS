@@ -52,6 +52,11 @@ struct Constants {
         static let LogoImage = UIImage(named: "logo")!
     }
     
+    struct AppStore {
+        static let TitleText = "App Store"
+        static let ReviewURL = URL(string: "itms-apps://itunes.apple.com/app/id1236035785?action=write-review")!
+    }
+    
     struct MessageDescription {
         static let NoInternetConnection = "网络连接超时。"
     }

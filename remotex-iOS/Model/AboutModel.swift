@@ -13,6 +13,7 @@ struct AboutModel {
     let slogan: String
     let description: String
     let author: String
+    let review: String
     let authorTwitterUsername: String
     let remoteXiOSGitHub: String
     let remoteXiOSContributors: String
@@ -30,7 +31,7 @@ struct AboutModel {
         self.remoteXiOSContributors = "贡献者列表"
         self.remoteXiOSGitHub = "GitHub"
         self.author = "RemoteX iOS App 由 \(self.authorTwitterUsername) 创建，并带领 RemoteX iOS 社区共同开发，详细贡献者信息请点击查看\(self.remoteXiOSContributors)。\n欢迎前往社区 \(self.remoteXiOSGitHub) 主页围观源代码。"
-        
+        self.review = "喜欢“RemoteX”吗？\n请前往 \(Constants.AppStore.TitleText) 为我们评分。"
         self.remoteXWebSite = "https://remotex.ooclab.org"
         self.remoteXSlack = "https://remotex.slack.com"
         self.remoteXEmail = "admin@ooclab.org"

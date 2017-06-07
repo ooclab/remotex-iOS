@@ -64,6 +64,7 @@
 		52F7A6F01EB45BF900CF9ADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F7A6EF1EB45BF900CF9ADA /* Assets.xcassets */; };
 		52F7A6F31EB45BF900CF9ADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F7A6F11EB45BF900CF9ADA /* LaunchScreen.storyboard */; };
 		52F7A6FE1EB45BFA00CF9ADA /* remotex_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7A6FD1EB45BFA00CF9ADA /* remotex_iOSTests.swift */; };
+		7509AB6456865F8A759E2CC1 /* Pods_remotex_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBBDABFBA042E358F89FB56 /* Pods_remotex_iOSTests.framework */; };
 		DD8C1A9411BF837686EB9EB5 /* Pods_remotex_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D249E964E6ABE362AAAF464 /* Pods_remotex_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -152,6 +153,7 @@
 				523CA7161EE1074600B8EB20 /* Pods_remotex_iOSTests.framework in Frameworks */,
 				525B3D1C1EC95487007B5B68 /* AsyncDisplayKit.framework in Frameworks */,
 				525B3D1A1EC9546D007B5B68 /* XCTest.framework in Frameworks */,
+				7509AB6456865F8A759E2CC1 /* Pods_remotex_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +625,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -674,6 +677,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -739,6 +743,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "remotex-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
