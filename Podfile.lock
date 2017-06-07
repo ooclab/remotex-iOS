@@ -20,10 +20,10 @@ PODS:
     - PINCache (= 3.0.1-beta.4)
     - PINRemoteImage/Core
   - PromptMessage (1.0.0)
-  - Texture (2.3.2):
-    - Texture/PINRemoteImage (= 2.3.2)
-  - Texture/Core (2.3.2)
-  - Texture/PINRemoteImage (2.3.2):
+  - Texture (2.3.3):
+    - Texture/PINRemoteImage (= 2.3.3)
+  - Texture/Core (2.3.3)
+  - Texture/PINRemoteImage (2.3.3):
     - PINRemoteImage/iOS (= 3.0.0-beta.9)
     - PINRemoteImage/PINCache
     - Texture/Core
@@ -39,7 +39,7 @@ SPEC CHECKSUMS:
   PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
   PINRemoteImage: e4e02e15a6f96cedbcef2abf1c9c1228dc9897d7
   PromptMessage: 201594328dfcd7d96c2d1aae0cfa78cee298a2a2
-  Texture: 18664254419f35de27af76399b3b265cbad5740a
+  Texture: e01a363c2b6567e1ff27a878995e0d271fbb424c
 
 PODFILE CHECKSUM: 7315141ecbca185cf927e4e3911a908b42ff19ae
 
