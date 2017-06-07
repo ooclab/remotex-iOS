@@ -6,7 +6,7 @@ git:
   depth: 10
 os: osx
 osx_image: xcode8.3
-xcode_sdk: iphonesimulator10.3
+xcode_sdk: iphonesimulator10.3.1
 xcode_project: remotex-iOS.xcodeproj
 xcode_scheme: remotex-iOSTests
 before_install:
@@ -20,9 +20,9 @@ before_install:
 - xcrun simctl list
 script:
 - xcodebuild -scheme remotex-iOS -workspace remotex-iOS.xcworkspace -sdk iphonesimulator10.3
-  -destination 'name=iPhone 7,OS=10.3' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+  -destination 'name=iPhone 7,OS=10.3.1' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 - xcodebuild -scheme remotex-iOSTests -workspace remotex-iOS.xcworkspace -sdk iphonesimulator10.3
-  -destination 'name=iPhone 7,OS=10.3' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+  -destination 'name=iPhone 7,OS=10.3.1' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
   test
 notifications:
   slack:
