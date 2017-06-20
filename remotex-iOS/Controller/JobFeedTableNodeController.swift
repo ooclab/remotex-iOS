@@ -175,9 +175,10 @@ extension JobFeedTableNodeController: ASTableDelegate, ASTableDataSource {
     
     func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
         let job = jobFeed.jobs[indexPath.row]
+        let jobTitle = job.jobTitle
         let jobID = job.jobID
         let url = URL.URLForJobRedirect(withID: jobID)
-        let jobViewController = JobWebViewController.init(withURL: url)
+        let jobViewController = JobWebViewController.init(withURL: url, withTitle: jobTitle)
         self.navigationController?.pushViewController(jobViewController, animated: true)
         tableNode.deselectRow(at: indexPath, animated: false)
     }
@@ -188,9 +189,10 @@ extension JobFeedTableNodeController: UIViewControllerPreviewingDelegate {
     public func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
         if let indexPath = self.node.indexPathForRow(at: location) {
             let job = jobFeed.jobs[indexPath.row]
+            let jobTitle = job.jobTitle
             let jobID = job.jobID
             let url = URL.URLForJobRedirect(withID: jobID)
-            let jobViewController = JobWebViewController.init(withURL: url)
+            let jobViewController = JobWebViewController.init(withURL: url, withTitle: jobTitle)
             return jobViewController
         } else {
             return nil

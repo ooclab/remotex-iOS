@@ -66,7 +66,7 @@ class AboutNodeTests: FBSnapshotTestCase {
         
         XCTAssertNotNil(linkInfoNode)
         XCTAssertEqual(linkInfoNode.view.frame, CGRect.init(x: 0, y: 0, width: 0, height: 0))
-        let linkInfoText = "联系方式\n网 站：https://remotex.ooclab.org\nSlack：https://remotex.slack.com\n邮 件：admin@ooclab.org\nqq群: remotex 633498747\n微信群: 加 lijian_gnu 拉入群"
+        let linkInfoText = "联系方式\n网 站：https://remotex.ooclab.org\nSlack：https://remotex.slack.com\n邮 件：admin@ooclab.org\nQQ: RemoteX 633498747\n微信: lijian_gnu（手动拉入微信群）"
         XCTAssertEqual(linkInfoNode.attributedText?.string, linkInfoText)
         
         XCTAssertNotNil(versionNode)
