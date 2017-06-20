@@ -12,17 +12,19 @@ import WebKit
 class JobWebViewController: UIViewController, WKNavigationDelegate {
     
     var url: URL!
+    var jobTitle: String!
     
     var webView: WKWebView!
     
     var progressView: UIProgressView!
     
     convenience init() {
-        self.init(withURL: nil)
+        self.init(withURL: nil, withTitle: nil)
     }
     
-    init(withURL url: URL!) {
+    init(withURL url: URL!, withTitle jobTitle: String!) {
         self.url = url
+        self.jobTitle = jobTitle
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -46,11 +48,11 @@ class JobWebViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
         
         setupProgressView()
+        setupNavigation()
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
         webView.allowsLinkPreview = true
         webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -105,6 +107,21 @@ class JobWebViewController: UIViewController, WKNavigationDelegate {
                 progressView.progress = progress
             }
         }
+    }
+    
+    func setupNavigation() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonSystemItem.action, target: self, action: #selector(shareAction))
+    }
+    
+    func shareAction() {
+        let image = Constants.ShareContext.LogoImage
+        let shareTitle: String! = self.jobTitle
+        let shareURL: URL! = self.url
+        var shareObject = [Any]()
+        shareObject = [image, shareURL, shareTitle] as [Any]
+        let activityViewController = UIActivityViewController(activityItems: shareObject, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
+        self.present(activityViewController, animated: true, completion: nil)
     }
     
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
